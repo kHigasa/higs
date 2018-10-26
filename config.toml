@@ -1,6 +1,6 @@
 baseURL = "https://khigasa.github.io/higs"
 languageCode = "en-us"
-title = "lazy lazy"
+title = "higs not higgs"
 canonifyurls = true
 publishdir = "public"
 theme="hugo-tranquilpeak-theme"
