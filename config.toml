@@ -89,3 +89,6 @@ theme="hugo-tranquilpeak-theme"
   imageGallery = true
   hierarchicalCategories = true
   syntaxHighlighter = 'highlight.js'
+
+[blackfriday]
+  hrefTargetBlank = true
