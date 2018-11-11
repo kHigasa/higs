@@ -55,6 +55,18 @@ theme="hugo-tranquilpeak-theme"
   name = "Stack Overflow"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-stack-overflow\"></i>"
   url = "https://stackoverflow.com/users/9315234/koji-higasa"
+[[menu.links]]
+  weight = 2
+  identifier = "facebook"
+  name = "Facebook"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-facebook\"></i>"
+  url = "https://www.facebook.com/khigasa"
+[[menu.links]]
+  weight = 3
+  identifier = "twitter"
+  name = "Twitter"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-twitter\"></i>"
+  url = "https://twitter.com/andreHiGasa"
 
 [[menu.misc]]
   weight = 0
@@ -65,8 +77,8 @@ theme="hugo-tranquilpeak-theme"
 
 [author]
   name = "kHigasa"
-  bio = "Super bio with markdown support **COOL**"
-  job = "Ruby backend developer"
+  bio = "Bachelor of science 2 in physics"
+  job = "Developer"
   location = "Japan"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
   gravatarEmail = "kojihigasa@gmail.com"
@@ -74,7 +86,7 @@ theme="hugo-tranquilpeak-theme"
   # Overwritten by your gravatar image if `author.gravatarEmail` is filled
   picture = "https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png"
   # Your Twitter username without the @. E.g : tranquilpeak
-  twitter = "thibaudlepretre"
+  twitter = "andreHiGasa"
   # Your google plus profile id. E.g : +ThibaudLepretre or 114625208755123718311
   googlePlus = "+ThibaudLepretre"
 
