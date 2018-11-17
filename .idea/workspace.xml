@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f75ac38e-51df-4ad8-b67b-f7b9d4d4a202" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/content/post/entree_into_cs/1542199138.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/post/entree_into_cs/1542199138.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,16 +15,17 @@
     <session id="8791187">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.35" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -45,7 +47,7 @@
           <entry key="HTML" value="46" />
           <entry key="Markdown" value="7191" />
           <entry key="PLAIN_TEXT" value="9" />
-          <entry key="TOML file" value="158" />
+          <entry key="TOML file" value="179" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.composer.command.options" />
@@ -68,14 +70,14 @@
           <entry key="gitignore" value="9" />
           <entry key="html" value="46" />
           <entry key="md" value="7191" />
-          <entry key="toml" value="158" />
+          <entry key="toml" value="179" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/post/entree_into_cs/1542199138.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -83,6 +85,15 @@
                 <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config.toml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="81" column="20" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -108,12 +119,12 @@
         <option value="$PROJECT_DIR$/content/post/entree_into_cs/1541943020.md" />
         <option value="$PROJECT_DIR$/content/post/art/1541943171.md" />
         <option value="$PROJECT_DIR$/content/post/entree_into_cs/1541947663.md" />
-        <option value="$PROJECT_DIR$/config.toml" />
         <option value="$PROJECT_DIR$/content/post/entree_into_cs/chap2/exercises.md" />
         <option value="$PROJECT_DIR$/content/post/entree_into_cs/chap2/programming_problems.md" />
         <option value="$PROJECT_DIR$/content/post/entree_into_cs/chap2/programming_projects.md" />
         <option value="$PROJECT_DIR$/content/post/entree_into_cs/1542033780.md" />
         <option value="$PROJECT_DIR$/content/post/entree_into_cs/1542199138.md" />
+        <option value="$PROJECT_DIR$/config.toml" />
       </list>
     </option>
   </component>
@@ -132,9 +143,8 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="-1920" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -143,36 +153,12 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="higs" type="b2602c69:ProjectViewProjectNode" />
               <item name="higs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="higs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="higs" type="462c0819:PsiDirectoryNode" />
-              <item name="archetypes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="higs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="higs" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="higs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="higs" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="post" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="higs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="higs" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="post" type="462c0819:PsiDirectoryNode" />
-              <item name="entree_into_cs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="higs" type="b2602c69:ProjectViewProjectNode" />
@@ -188,6 +174,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -231,18 +218,19 @@
       <workItem from="1541949012705" duration="1034000" />
       <workItem from="1542033500841" duration="2201000" />
       <workItem from="1542164238072" duration="44000" />
-      <workItem from="1542198221276" duration="2744000" />
+      <workItem from="1542198221276" duration="2860000" />
+      <workItem from="1542462582277" duration="398000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24336000" />
+    <option name="totallyTimeSpent" value="24850000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11821086" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11954766" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -256,7 +244,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3666997" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.36625513" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
@@ -325,13 +313,6 @@
             <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.toml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="68" column="40" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -440,6 +421,13 @@
             <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.toml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="81" column="20" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
         </state>
       </provider>
     </entry>

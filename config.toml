@@ -77,8 +77,8 @@ theme="hugo-tranquilpeak-theme"
 
 [author]
   name = "kHigasa"
-  bio = "Bachelor of science 2 in physics"
-  job = "Developer"
+  bio = "Bachelor of science in physics"
+  job = "Software engineer"
   location = "Japan"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
   gravatarEmail = "kojihigasa@gmail.com"
