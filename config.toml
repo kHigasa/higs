@@ -4,6 +4,7 @@ title = "higs not higgs"
 canonifyurls = true
 publishdir = "public"
 theme="hugo-tranquilpeak-theme"
+googleAnalytics = "UA-128672321-2"
 
 [[menu.main]]
   weight = 0
