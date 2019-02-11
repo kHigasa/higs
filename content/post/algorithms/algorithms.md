@@ -9,7 +9,7 @@ tags:
 - tag2
 keywords:
 - tech
-#thumbnailImage: //example.com/image.jpg
+thumbnailImage: https://1.bp.blogspot.com/-YbnUumTizqQ/VbnQnTctDdI/AAAAAAAAwDA/KVsI1dCoGVw/s800/accessory_pierce_ana.png
 ---
 
 <!--more-->
