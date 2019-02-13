@@ -1,6 +1,7 @@
 ---
 title: "Algorithms"
 date: 2019-02-11T21:45:37+09:00
+draft: true
 categories:
 - category
 - subcategory
