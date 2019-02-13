@@ -22,7 +22,9 @@ Welcome! This is the documentation for Rustreeem.
 
 **Language Reference:**
 
-[Reference](https://khigasa.github.io/higs/post/rustreeem/reference/)
+[Reference](https://khigasa.github.io/higs/post/rustreeem/reference/) - describes syntax and language elements
+
+[Source code](https://github.com/kHigasa/rustreeem) - full code on GitHub repo
 
 **References:**
 
