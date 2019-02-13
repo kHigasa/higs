@@ -26,7 +26,7 @@ Welcome! This is the documentation for Rustreeem.
 
 [Source code](https://github.com/kHigasa/rustreeem) - full code on GitHub repo
 
-**References:**
+**Bibliography:**
 
 - Alfred V. Aho, Monica S. Lam, Ravi Sethi, Jeffrey D. Ullman, *Compilers: Principles, Techniques, and Tools (2nd Edition)*, 2006 
 - Terence Parr, *Language Implementation Patterns*, 2009
