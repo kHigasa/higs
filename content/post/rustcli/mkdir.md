@@ -30,16 +30,14 @@ This time, I write unix `mkdir` command with rust.
 ### Pseudo code
 
 ```
-option.match {
+options.match
     m => mkdir; set permission;
     p => mkdir recursively;
     h => print usage;
-    _ => if !arg.is_empty() {
+    _ => if !args.is_empty()
              mkdir;
-         } else {
+         else
              print usage;
-         }
-}
 ```
 
 ### Tips
