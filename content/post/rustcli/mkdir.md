@@ -34,7 +34,11 @@ option.match {
     m => mkdir; set permission;
     p => mkdir recursively;
     h => print usage;
-    _ => print usage;
+    _ => if !arg.is_empty() {
+             mkdir;
+         } else {
+             print usage;
+         }
 }
 ```
 
