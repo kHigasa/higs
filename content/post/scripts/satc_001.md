@@ -52,3 +52,35 @@ thumbnailImage: https://1.bp.blogspot.com/-yWuhaBxYtKg/UWykgtKSTDI/AAAAAAAAQjQ/I
 
 **Carrie:** That day, Tim popped the question.
 
+**Tim:** How would you like to have dinner with my folks Tuesday night?
+
+**Elizabeth:** I'd love to!
+
+**Carrie:** On Tuesday he called with some bad news.
+
+**Tim:** My mother's not feeling very well.
+
+**Elizabeth:** Well gosh! I'm sorry...
+
+**Tim:** Could we take a raincheck?
+
+**Elizabeth:** Of course. Tell your mom I hope she feels better.
+
+**Carrie:** When she hadn't heard from him for 2 weeks she called:
+
+**Elizabeth:** Tim, its Elizabeth, that’s an awfully long rain check! 
+
+**Carrie:** He said he was up to his ears and that he’d call her the next day.
+
+**Elizabeth:** He never did call of course. Bastard.
+
+**Carrie:** She told me one day over coffee.
+
+**Elizabeth:** I don’t understand. In England, looking at houses together would have meant something.
+
+**Carrie:** Then I realised no one had told her about the end of love in Manhattan.
+
+
+**Tim:** 
+**Carrie:** 
+**Elizabeth:** 
