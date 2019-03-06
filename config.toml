@@ -7,67 +7,67 @@ theme="hugo-tranquilpeak-theme"
 googleAnalytics = "UA-128672321-2"
 
 [[menu.main]]
-  weight = 0
+  weight = 1
   identifier = "home"
   name = "Home"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
   url = "/"
 [[menu.main]]
-  weight = 1
+  weight = 2
+  identifier = "about"
+  name = "About"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
+  url = "/#about"
+[[menu.main]]
+  weight = 3
   identifier = "categories"
   name = "Categories"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-bookmark\"></i>"
   url = "/categories"
 [[menu.main]]
-  weight = 2
+  weight = 4
   identifier = "tags"
   name = "Tags"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-tags\"></i>"
   url = "/tags"
 [[menu.main]]
-  weight = 3
-  identifier = "archives"
-  name = "Archives"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\"></i>"
-  url = "/archives"
-[[menu.main]]
-  weight = 4
+  weight = 5
   identifier = "search"
   name = "Search"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-search\"></i>"
   url = "/#search"
   class = "st-search-show-outputs"
 [[menu.main]]
-  weight = 4
-  identifier = "about"
-  name = "About"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
-  url = "/#about"
+  weight = 6
+  identifier = "archives"
+  name = "Archives"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\"></i>"
+  url = "/archives"
 
 [[menu.links]]
-  weight = 0
+  weight = 1
   identifier = "github"
   name = "GitHub"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
   url = "https://github.com/kHigasa"
 [[menu.links]]
-  weight = 1
+  weight = 2
   identifier = "stackoverflow"
   name = "Stack Overflow"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-stack-overflow\"></i>"
   url = "https://stackoverflow.com/users/9315234/koji-higasa"
-[[menu.links]]
-  weight = 2
-  identifier = "facebook"
-  name = "Facebook"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-facebook\"></i>"
-  url = "https://www.facebook.com/khigasa"
 [[menu.links]]
   weight = 3
   identifier = "twitter"
   name = "Twitter"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-twitter\"></i>"
   url = "https://twitter.com/andreHiGasa"
+[[menu.links]]
+  weight = 4
+  identifier = "facebook"
+  name = "Facebook"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-facebook\"></i>"
+  url = "https://www.facebook.com/khigasa"
 
 [[menu.misc]]
   weight = 0
@@ -78,7 +78,7 @@ googleAnalytics = "UA-128672321-2"
 
 [author]
   name = "kHigasa"
-  bio = "Like: GNU/Linux, Rust, Lisp, Vim"
+  bio = "Like: GNU/Linux, Rust, Lisp, Vim :)"
   job = "Bachelor of science in physics"
   location = "Tokyo, Japan"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
