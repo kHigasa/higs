@@ -1,6 +1,6 @@
 baseURL = "https://khigasa.github.io/higs"
 languageCode = "en-us"
-title = "higs not higgs"
+title = "+ADw-higs-4DA+"
 canonifyurls = true
 publishdir = "public"
 theme="hugo-tranquilpeak-theme"
@@ -79,8 +79,8 @@ googleAnalytics = "UA-128672321-2"
 [author]
   name = "kHigasa"
   bio = "Bachelor of science in physics"
-  job = "Software engineer"
-  location = "Japan"
+  job = "Student"
+  location = "Tokyo, Japan"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
   gravatarEmail = "kojihigasa@gmail.com"
   # Your profile picture
@@ -93,7 +93,7 @@ googleAnalytics = "UA-128672321-2"
 
 [params]
   author = "kHigasa"
-  description = "Higasa's Hugo Site"
+  description = "higs' happy hacks - hhh"
   sidebarBehavior = 1
   thumbnailImage = true
   thumbnailImagePosition = "right"
