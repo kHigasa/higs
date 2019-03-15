@@ -78,7 +78,8 @@ googleAnalytics = "UA-128672321-2"
 
 [author]
   name = "kHigasa"
-  bio = "Like: GNU/Linux, Rust, Lisp, Vim :)"
+  bio = """like: GNU/Linux, Rust, Lisp, Vim :)           
+           mainly do: cyber security and system programming, reverse engineering"""
   job = "Bachelor of science in physics"
   location = "Tokyo, Japan"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
