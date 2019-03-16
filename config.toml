@@ -78,7 +78,7 @@ googleAnalytics = "UA-128672321-2"
 
 [author]
   name = "kHigasa"
-  bio = """like: GNU/Linux, Rust, Lisp, Vim :)           
+  bio = """like: GNU/Linux, Rust, Lisp, Shell Script, Vim :)           
            mainly do: cyber security and system programming, reverse engineering"""
   job = "Bachelor of science in physics"
   location = "Tokyo, Japan"
