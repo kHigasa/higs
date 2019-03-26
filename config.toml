@@ -52,18 +52,30 @@ googleAnalytics = "UA-128672321-2"
   url = "https://github.com/kHigasa"
 [[menu.links]]
   weight = 2
+  identifier = "kaggle"
+  name = "Kaggle"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-font\"></i>"
+  url = "https://www.kaggle.com/khigasa"
+[[menu.links]]
+  weight = 3
+  identifier = "codeforces"
+  name = "Codeforces"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-birthday-cake\"></i>"
+  url = "https://codeforces.com/profile/khigasa"
+[[menu.links]]
+  weight = 4
   identifier = "stackoverflow"
   name = "Stack Overflow"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-stack-overflow\"></i>"
   url = "https://stackoverflow.com/users/9315234/koji-higasa"
 [[menu.links]]
-  weight = 3
+  weight = 5
   identifier = "twitter"
   name = "Twitter"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-twitter\"></i>"
   url = "https://twitter.com/andreHiGasa"
 [[menu.links]]
-  weight = 4
+  weight = 6
   identifier = "facebook"
   name = "Facebook"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-facebook\"></i>"
@@ -78,8 +90,8 @@ googleAnalytics = "UA-128672321-2"
 
 [author]
   name = "kHigasa"
-  bio = """like: GNU/Linux, Rust, Lisp, Shell Script, Vim :)           
-           mainly do: cyber security and system programming, reverse engineering"""
+  bio = """like: GNU/Linux, Rust, Lisp, Shell Script, Vim :)
+           mainly do: Reverse Engineering and Data Analyzing, (Functional System) Programming"""
   job = "Bachelor of science in physics"
   location = "Tokyo, Japan"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
