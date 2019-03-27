@@ -1,6 +1,6 @@
 baseURL = "https://khigasa.github.io/higs"
 languageCode = "en-us"
-title = "|-|-| haggard higs' hacks"
+title = "|-|-|-| HaggardHigs'Hacks"
 canonifyurls = true
 publishdir = "public"
 theme="hugo-tranquilpeak-theme"
