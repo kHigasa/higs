@@ -64,18 +64,24 @@ googleAnalytics = "UA-128672321-2"
   url = "https://codeforces.com/profile/khigasa"
 [[menu.links]]
   weight = 4
+  identifier = "pwn"
+  name = "Pwn"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-flag-checkered\"></i>"
+  url = "https://pwnable.tw/user/15978"
+[[menu.links]]
+  weight = 5
   identifier = "stackoverflow"
   name = "Stack Overflow"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-stack-overflow\"></i>"
   url = "https://stackoverflow.com/users/9315234/koji-higasa"
 [[menu.links]]
-  weight = 5
+  weight = 6
   identifier = "twitter"
   name = "Twitter"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-twitter\"></i>"
   url = "https://twitter.com/andreHiGasa"
 [[menu.links]]
-  weight = 6
+  weight = 7
   identifier = "facebook"
   name = "Facebook"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-facebook\"></i>"
