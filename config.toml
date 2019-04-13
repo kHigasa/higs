@@ -1,10 +1,29 @@
 baseURL = "https://khigasa.github.io/higs"
 languageCode = "en-us"
-title = "|-|-|-| HaggardHigs'Hacks"
+defaultContentLanguage = "en-us"
+title = "|-|-|-| HaggardHigs'Hacks - とある物理屋(になりたい人)の回想"
 canonifyurls = true
 publishdir = "public"
 theme="hugo-tranquilpeak-theme"
 googleAnalytics = "UA-128672321-2"
+disqusShortname = "haggard-higs-hacks"
+paginate = 7
+
+[permalinks]
+  post = "/:slug/"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  archive = "archives"
+
+[author]
+  name = "kHigasa"
+  bio = "Coding in C/C++ & Python is my basic skill set."
+  job = "Bachelor of science in physics"
+  location = "Tokyo, Japan"
+  gravatarEmail = "kojihigasa@gmail.com"
+  twitter = "andreHiGasa"
 
 [[menu.main]]
   weight = 1
@@ -17,7 +36,7 @@ googleAnalytics = "UA-128672321-2"
   identifier = "about"
   name = "About"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
-  url = "/#about"
+  url = "/page/about"
 [[menu.main]]
   weight = 3
   identifier = "categories"
@@ -35,7 +54,7 @@ googleAnalytics = "UA-128672321-2"
   identifier = "search"
   name = "Search"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-search\"></i>"
-  url = "/#search"
+  url = "/search"
   class = "st-search-show-outputs"
 [[menu.main]]
   weight = 6
@@ -43,6 +62,12 @@ googleAnalytics = "UA-128672321-2"
   name = "Archives"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\"></i>"
   url = "/archives"
+[[menu.main]]
+  weight = 7
+  identifier = "contact"
+  name = "Contact"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-envelope\"></i>"
+  url = "/page/contact"
 
 [[menu.links]]
   weight = 1
@@ -64,8 +89,8 @@ googleAnalytics = "UA-128672321-2"
   url = "https://codeforces.com/profile/khigasa"
 [[menu.links]]
   weight = 4
-  identifier = "pwn"
-  name = "Pwn"
+  identifier = "ctf"
+  name = "CTF"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-flag-checkered\"></i>"
   url = "https://pwnable.tw/user/15978"
 [[menu.links]]
@@ -94,25 +119,9 @@ googleAnalytics = "UA-128672321-2"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-rss\"></i>"
   url = "/index.xml"
 
-[author]
-  name = "kHigasa"
-  bio = """like:) GNU/Linux, Rust, Lisp, Dart, Shell Script, Vim
-           mainly do:) Reverse Engineering and Data Analyzing, (Functional System) Programming"""
-  job = "Bachelor of science in physics"
-  location = "Tokyo, Japan"
-  # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
-  gravatarEmail = "kojihigasa@gmail.com"
-  # Your profile picture
-  # Overwritten by your gravatar image if `author.gravatarEmail` is filled
-  picture = "https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png"
-  # Your Twitter username without the @. E.g : tranquilpeak
-  twitter = "andreHiGasa"
-  # Your google plus profile id. E.g : +ThibaudLepretre or 114625208755123718311
-  googlePlus = "+ThibaudLepretre"
-
 [params]
   author = "kHigasa"
-  description = "hhh - haggard higs' hacks 〜物理屋になりたい人の回想〜"
+  description = "HHH HaggardHigs'Hacks - とある物理屋(になりたい人)の回想"
   sidebarBehavior = 1
   thumbnailImage = true
   thumbnailImagePosition = "right"
@@ -121,6 +130,17 @@ googleAnalytics = "UA-128672321-2"
   imageGallery = true
   hierarchicalCategories = true
   syntaxHighlighter = 'highlight.js'
+  wapPaginator = true
+
+  [[params.sharingOptions]]
+    name = "Facebook"
+    icon = "fa-facebook-official"
+    url = "https://www.facebook.com/sharer/sharer.php?u=%s"
+
+  [[params.sharingOptions]]
+    name = "Twitter"
+    icon = "fa-twitter"
+    url = "https://twitter.com/intent/tweet?text=%s"
 
 [blackfriday]
   hrefTargetBlank = true
