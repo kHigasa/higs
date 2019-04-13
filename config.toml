@@ -54,7 +54,7 @@ paginate = 7
   identifier = "search"
   name = "Search"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-search\"></i>"
-  url = "/search"
+  url = "/page/search"
   class = "st-search-show-outputs"
 [[menu.main]]
   weight = 6
