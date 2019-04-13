@@ -1,7 +1,7 @@
 baseURL = "https://khigasa.github.io/higs"
 languageCode = "en-us"
 defaultContentLanguage = "en-us"
-title = "|-|-|-| HaggardHigs'Hacks - とある物理屋(になりたい人)の回想"
+title = "|-|-|-| HaggardHigs'Hacks"
 canonifyurls = true
 publishdir = "public"
 theme="hugo-tranquilpeak-theme"
