@@ -1,6 +1,7 @@
 ---
 title: "Vir - Vi Rusted"
 date: 2019-02-17T16:54:54+09:00
+draft: true
 categories:
 - editor
 tags:
