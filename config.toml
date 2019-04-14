@@ -1,13 +1,13 @@
 baseURL = "https://khigasa.github.io/higs"
 languageCode = "en-us"
 defaultContentLanguage = "en-us"
-title = "|-|-|-| HaggardHigs'Hacks"
+title = "|-|-|-| Haggard Higs' Hacks"
 canonifyurls = true
 publishdir = "public"
 theme="hugo-tranquilpeak-theme"
 googleAnalytics = "UA-128672321-2"
 disqusShortname = "haggard-higs-hacks"
-paginate = 7
+paginate = 10
 
 [permalinks]
   post = "/:slug/"
@@ -121,7 +121,7 @@ paginate = 7
 
 [params]
   author = "kHigasa"
-  description = "HHH HaggardHigs'Hacks - とある物理屋(になりたい人)の回想"
+  description = "HHH Haggard Higs' Hacks - とある物理屋(になりたい人)の回想"
   sidebarBehavior = 1
   thumbnailImage = true
   thumbnailImagePosition = "right"
@@ -130,6 +130,7 @@ paginate = 7
   imageGallery = true
   hierarchicalCategories = true
   syntaxHighlighter = 'highlight.js'
+  clearReading = true
   wapPaginator = true
 
   [[params.sharingOptions]]

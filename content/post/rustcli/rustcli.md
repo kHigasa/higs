@@ -10,7 +10,11 @@ keywords:
 thumbnailImage: https://3.bp.blogspot.com/-LBx5ih9NlO8/USwPZHyoJvI/AAAAAAAAOYY/RxOWk8mBra4/s1600/osonaemono.png
 ---
 
-# Rustcli
+I write basic UNIX/LINUX commands in Rust.
+
+<!--more-->
+
+<!--toc-->
 
 **Commands:**
 

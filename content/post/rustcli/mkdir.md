@@ -11,9 +11,11 @@ keywords:
 thumbnailImage: https://1.bp.blogspot.com/-hVGiemkjg58/V5NECYgvcxI/AAAAAAAA8gk/aj0H6AbBIV4XOIdF964KDN48oNCsy0qjgCLcB/s800/ha_kenkou_oldman.png
 ---
 
-# mkdir - *make directories*
+This time, I wrote unix `mkdir`--*make directories* command with rust.
 
-This time, I write unix `mkdir` command with rust.
+<!--more-->
+
+<!--toc-->
 
 *Code on my GitHub repo:*
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 168px; padding-bottom: 0;"><a href="https://github.com/kHigasa/rustcli/blob/master/mkdir/mkdir/src/main.rs" data-iframely-url="//cdn.iframe.ly/8tLVzR6"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
