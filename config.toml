@@ -101,16 +101,28 @@ paginate = 10
   url = "https://stackoverflow.com/users/9315234/koji-higasa"
 [[menu.links]]
   weight = 6
+  identifier = "booklog"
+  name = "Booklog"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-book\"></i>"
+  url = "https://booklog.jp/users/khigasa/profile"
+[[menu.links]]
+  weight = 7
   identifier = "twitter"
   name = "Twitter"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-twitter\"></i>"
   url = "https://twitter.com/andreHiGasa"
 [[menu.links]]
-  weight = 7
+  weight = 8
   identifier = "facebook"
   name = "Facebook"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-facebook\"></i>"
   url = "https://www.facebook.com/khigasa"
+[[menu.links]]
+  weight = 9
+  identifier = "instagram"
+  name = "Instagram"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-instagram\"></i>"
+  url = "https://www.instagram.com/khigasa/"
 
 [[menu.misc]]
   weight = 0
