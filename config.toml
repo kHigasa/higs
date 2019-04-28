@@ -110,7 +110,7 @@ paginate = 10
   identifier = "shogi"
   name = "Shogi"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-square\"></i>"
-  url = "https://stackoverflow.com/users/9315234/koji-higasa"
+  url = "https://bbs24.shogidojo.net/forums/users/723729438/"
 [[menu.links]]
   weight = 8
   identifier = "booklog"
