@@ -79,13 +79,13 @@ paginate = 10
   weight = 2
   identifier = "kaggle"
   name = "Kaggle"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-font\"></i>"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-server\"></i>"
   url = "https://www.kaggle.com/khigasa"
 [[menu.links]]
   weight = 3
   identifier = "codeforces"
   name = "Codeforces"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-birthday-cake\"></i>"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-code\"></i>"
   url = "https://codeforces.com/profile/khigasa"
 [[menu.links]]
   weight = 4
@@ -101,28 +101,46 @@ paginate = 10
   url = "https://stackoverflow.com/users/9315234/koji-higasa"
 [[menu.links]]
   weight = 6
+  identifier = "chess"
+  name = "Chess"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-circle\"></i>"
+  url = "https://www.chess.com/member/khigasa"
+[[menu.links]]
+  weight = 7
+  identifier = "shogi"
+  name = "Shogi"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-square\"></i>"
+  url = "https://stackoverflow.com/users/9315234/koji-higasa"
+[[menu.links]]
+  weight = 8
   identifier = "booklog"
   name = "Booklog"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-book\"></i>"
   url = "https://booklog.jp/users/khigasa/profile"
 [[menu.links]]
-  weight = 7
+  weight = 9
   identifier = "twitter"
   name = "Twitter"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-twitter\"></i>"
   url = "https://twitter.com/andreHiGasa"
 [[menu.links]]
-  weight = 8
+  weight = 10
   identifier = "facebook"
   name = "Facebook"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-facebook\"></i>"
   url = "https://www.facebook.com/khigasa"
 [[menu.links]]
-  weight = 9
+  weight = 11
   identifier = "instagram"
   name = "Instagram"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-instagram\"></i>"
   url = "https://www.instagram.com/khigasa/"
+[[menu.links]]
+  weight = 12
+  identifier = "youtube"
+  name = "Youtube"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-youtube\"></i>"
+  url = "https://www.youtube.com/channel/UCskbXTbY517iXKpUzN2unUA"
 
 [[menu.misc]]
   weight = 0
