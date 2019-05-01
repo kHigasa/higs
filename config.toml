@@ -103,7 +103,7 @@ paginate = 10
   weight = 6
   identifier = "chess"
   name = "Chess"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-circle\"></i>"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-star\"></i>"
   url = "https://www.chess.com/member/khigasa"
 [[menu.links]]
   weight = 7
@@ -113,30 +113,36 @@ paginate = 10
   url = "https://bbs24.shogidojo.net/forums/users/723729438/"
 [[menu.links]]
   weight = 8
+  identifier = "go"
+  name = "Go"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-circle\"></i>"
+  url = "http://u-gen.nihonkiin.or.jp/"
+[[menu.links]]
+  weight = 9
   identifier = "booklog"
   name = "Booklog"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-book\"></i>"
   url = "https://booklog.jp/users/khigasa/profile"
 [[menu.links]]
-  weight = 9
+  weight = 10
   identifier = "twitter"
   name = "Twitter"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-twitter\"></i>"
   url = "https://twitter.com/andreHiGasa"
 [[menu.links]]
-  weight = 10
+  weight = 11
   identifier = "facebook"
   name = "Facebook"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-facebook\"></i>"
   url = "https://www.facebook.com/khigasa"
 [[menu.links]]
-  weight = 11
+  weight = 12
   identifier = "instagram"
   name = "Instagram"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-instagram\"></i>"
   url = "https://www.instagram.com/khigasa/"
 [[menu.links]]
-  weight = 12
+  weight = 13
   identifier = "youtube"
   name = "Youtube"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-youtube\"></i>"
