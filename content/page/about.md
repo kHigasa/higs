@@ -33,18 +33,20 @@ There are some SNS accounts on my sidebar. Here, I consolidate other misc accoun
 - Booklog: [khigasa](https://booklog.jp/users/khigasa/profile)
 - Chess: [khigasa](https://www.chess.com/member/khigasa)
 - Cookpad: [khigasa](https://cookpad.com/kitchen/27012562)
+- Crates.io: [kHigasa](https://crates.io/users/kHigasa)
 - Gist: [khigasa](https://gist.github.com/khigasa)
 - GitLab: [@kHigasa](https://gitlab.com/kHigasa)
 - Go: [u-gen.nihonkiin.or.jp](https://u-gen.nihonkiin.or.jp)
 - Qiita: [@kHigasa](https://qiita.com/kHigasa)
 - OpenRCE: [khigasa](https://www.openrce.org/profile/view/khigasa)
 - Quora: [khigasa](https://www.quora.com/profile/khigasa-Higasa-Koji)
+- RubyGems.org: [khigasa](https://rubygems.org/profiles/khigasa)
 - Shogi: [www.shogidojo.net](https://www.shogidojo.net)
 - SlideShare: [KojiHigasa](https://www.slideshare.net/KojiHigasa)
 - SpeakerDeck: [khigasa](https://speakerdeck.com/khigasa)
 - StackExchange: [khigasa](https://stackexchange.com/users/12879879/khigasa)
 - Twitch: [khigasa](https://www.twitch.tv/khigasa)
-- zcashcommunity: [kHigasa](https://forum.zcashcommunity.com/u/khigasa)
+- Zcashcommunity: [kHigasa](https://forum.zcashcommunity.com/u/khigasa)
 
 ### Workspace
 
