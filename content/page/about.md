@@ -8,24 +8,23 @@ showActions:    false
 
 ## Koji Higasa(樋笠 宏次)
 
-### Career
+<!-- ### Career -->
 
-### Affiliation
+### 👇Affiliation
 
-### Activities
+### 👇Activities
+###### - Products
 
-#### Products
+###### - Writing
 
-#### Writing
-
-#### Competition
+###### - Competition
 
 - Online
     - CTFTime: [khigasa](https://ctftime.org/)
     - Codeforces: [khigasa](https://codeforces.com/profile/khigasa)
     - Kaggle: [khigasa](https://www.kaggle.com/khigasa)
 
-### Network
+### 👇Network
 There are some SNS accounts on my sidebar. Here, I consolidate other misc accounts or sites I use alphabetically.
 
 - 0x00sec: [kHigasa](https://0x00sec.org/u/kHigasa)
@@ -48,8 +47,7 @@ There are some SNS accounts on my sidebar. Here, I consolidate other misc accoun
 - Twitch: [khigasa](https://www.twitch.tv/khigasa)
 - Zcashcommunity: [kHigasa](https://forum.zcashcommunity.com/u/khigasa)
 
-### Workspace
-
+### 👇Workspace
 - Desktop
     - CPU: Intel Corei7-9700K
     - Memory: 16GB
@@ -70,7 +68,7 @@ There are some SNS accounts on my sidebar. Here, I consolidate other misc accoun
 - Tools
     - git, neovim, zsh, tmux, fzf, ghq, peco, hub, xcode, InteliJ, Android Studio, chrome canary, chromium, firefox, aws, ..............
 
-### Public Key
+### 👇Public Key
 
 <details><summary>GitHub GnuPG(RSA4096bit)</summary>
 ```
@@ -127,69 +125,72 @@ gQf+d5E4LxMbgvnp2faEWDQAWYdCIGPQpWzKhpuhbI3HeDQS61yk5KPZ58Q9SflP
 ```
 </details>
 
-### Wallet
+### 👇Wallet
 
-### Favorites
+### 👇Favorites
+###### - Ideology
+**Nihilism**. I don't think this makes us *Untermensch* as Friedrich Wilhelm Nietzsche refered to.
 
-- Ideology<br>
-    **Nihilism**. I don't think this makes us *Untermensch* as Friedrich Wilhelm Nietzsche refered to.
+###### - Gnu/Linux
+I like all of the project including the history.
 
-- Gnu/Linux<br>I like all of the project including the history.
+###### - Programming Language
+- Rust
+- Lisp
 
-- Programming Language
-    - Rust
-    - Lisp
+###### - Editor
+- Vim<br>I love this dark power.
+- InteliJ<br>the greatest IDE I often use
 
-- Editor
-    - Vim<br>I love this dark power.
-    - InteliJ<br>the greatest IDE I often use
+###### - My home
+A great environment where I can concentrate on any and re-recognize me calmly.
 
-- My home<br>A great environment where I can concentrate on any and re-recognize me calmly.
+***"I wanna go home as soon as possible."*** This is what I think whenever I'm out.
 
-    ***"I wanna go home as soon as possible."*** This is what I think whenever I'm out.
+###### - Art
+- Abstract
+- Contemporary Art
+- Painting of Impressionism
 
-- Art
-    - Abstract
-    - Contemporary Art
-    - Painting of Impressionism
+###### - Writing
+I feel some beautifulness at the Japanese of Modern Japanese literature.
 
-- Writing<br>
-    I feel some beautifulness at the Japanese of Modern Japanese literature.
-    - Criticism
-    - Essay
+- Criticism
+- Essay
 
-- Physics<br>
-    My main interest is in the area of quantum.
+###### - Physics
+My main interest is in the area of quantum.
 
-- Math<br>
-    I like math theory the most. It is very logical and, moreover, I don't need to understand extremely high theorem and concept to solve it.
+###### - Math
+I like math theory the most. It is very logical and, moreover, I don't need to understand extremely high theorem and concept to solve it.
 
 
-- Music<br>Even though I don't usually like listening to music, I have some preference.<br>
+###### - Music
+Even though I don't usually like listening to music, I have some preference.<br>
 
-    ***"Would you listen to euphoric songs for the broken hearted or dirty voice's rap music which doesn't make any sense at all??? I would rather stare at white ceiling and count the dust dropped from it."*** (~~In my view, there are many such songs in J-Pop, so I hate listening to J-pop.~~)
+***"Would you listen to euphoric songs for the broken hearted or dirty voice's rap music which doesn't make any sense at all??? I would rather stare at white ceiling and count the dust dropped from it."*** (~~In my view, there are many such songs in J-Pop, so I hate listening to J-pop.~~)
 
-    - Rock<br>
-    **Linkin Park**. The vocalist Chester Charles Bennington has the greatest and the most beautiful shout in the world I think.
-    - Classic<br>
-    I like the symphony No.1, **Gustav Mahler**. I feel at ease most.
-    - Lo-fi<br>
-    I can concentrate most.
-    - K-Pop<br>
-    They are very impressive.
+- Rock<br>
+**Linkin Park**. The vocalist Chester Charles Bennington has the greatest and the most beautiful shout in the world I think.
+- Classic<br>
+I like the symphony No.1, **Gustav Mahler**. I feel at ease most.
+- Lo-fi<br>
+I can concentrate most.
+- K-Pop<br>
+They are very impressive.
 
-- Food
-    - Curry
-    - Vietnam coffee
-    - Redbull
+###### - Food
+- Curry
+- Vietnam coffee
+- Redbull
 
-- Football<br>I'm a fan of **Andres Iniesta**.
+###### - Football
+I'm a fan of **Andres Iniesta**.
 
-### Interests
+### 👇Interests
+###### - Ideology
+I'm interested in some agitators' and political crimers'.
 
-- Ideology<br>
-    I'm interested in some agitators' and political crimers'.
-
-- Computation<br>
-    I have the strong interest about how computing machine work and how they process instructions and control system.
+###### - Computation<br>
+I have the strong interest about how computing machine work and how they process instructions and control system.
 
