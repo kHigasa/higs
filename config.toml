@@ -77,72 +77,42 @@ paginate = 10
   url = "https://github.com/kHigasa"
 [[menu.links]]
   weight = 2
-  identifier = "kaggle"
-  name = "Kaggle"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-server\"></i>"
-  url = "https://www.kaggle.com/khigasa"
-[[menu.links]]
-  weight = 3
-  identifier = "codeforces"
-  name = "Codeforces"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-code\"></i>"
-  url = "https://codeforces.com/profile/khigasa"
-[[menu.links]]
-  weight = 4
-  identifier = "ctf"
-  name = "CTF"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-flag-checkered\"></i>"
-  url = "https://pwnable.tw/user/15978"
-[[menu.links]]
-  weight = 5
   identifier = "stackoverflow"
   name = "Stack Overflow"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-stack-overflow\"></i>"
   url = "https://stackoverflow.com/users/9315234/koji-higasa"
 [[menu.links]]
-  weight = 6
-  identifier = "chess"
-  name = "Chess"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-star\"></i>"
-  url = "https://www.chess.com/member/khigasa"
+  weight = 3
+  identifier = "reddit"
+  name = "Reddit"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-reddit\"></i>"
+  url = "https://www.reddit.com/user/khigasa"
 [[menu.links]]
-  weight = 7
-  identifier = "shogi"
-  name = "Shogi"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-square\"></i>"
+  weight = 4
+  identifier = "medium"
+  name = "Medium"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-medium\"></i>"
   url = "https://bbs24.shogidojo.net/forums/users/723729438/"
 [[menu.links]]
-  weight = 8
-  identifier = "go"
-  name = "Go"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-circle\"></i>"
-  url = "http://u-gen.nihonkiin.or.jp/"
-[[menu.links]]
-  weight = 9
-  identifier = "booklog"
-  name = "Booklog"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-book\"></i>"
-  url = "https://booklog.jp/users/khigasa/profile"
-[[menu.links]]
-  weight = 10
+  weight = 5
   identifier = "twitter"
   name = "Twitter"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-twitter\"></i>"
   url = "https://twitter.com/andreHiGasa"
 [[menu.links]]
-  weight = 11
+  weight = 6
   identifier = "facebook"
   name = "Facebook"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-facebook\"></i>"
   url = "https://www.facebook.com/khigasa"
 [[menu.links]]
-  weight = 12
+  weight = 7
   identifier = "instagram"
   name = "Instagram"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-instagram\"></i>"
   url = "https://www.instagram.com/khigasa/"
 [[menu.links]]
-  weight = 13
+  weight = 8
   identifier = "youtube"
   name = "Youtube"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-youtube\"></i>"
