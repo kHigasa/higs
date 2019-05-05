@@ -126,6 +126,8 @@ gQf+d5E4LxMbgvnp2faEWDQAWYdCIGPQpWzKhpuhbI3HeDQS61yk5KPZ58Q9SflP
 </details>
 
 ### 👇Wallet
+- Bitcoin(BTC)
+![Bitcoin(BTC)](/images/btc.png "Bitcoin-BTC")
 
 ### 👇Favorites
 ###### - Ideology
@@ -139,7 +141,7 @@ I like all of the project including the history.
 - Lisp
 
 ###### - Editor
-- Vim<br>I love this dark power.
+- Neovim<br>I love this dark power.
 - InteliJ<br>the greatest IDE I often use
 
 ###### - My home
