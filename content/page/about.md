@@ -5,7 +5,7 @@ comments:       false
 showMeta:       false
 showActions:    false
 ---
-
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
 ## Koji Higasa(樋笠 宏次)
 
 <!-- ### Career -->
@@ -18,7 +18,6 @@ showActions:    false
 ###### - Writing
 
 ###### - Competition
-
 - Online
     - CTFTime: [khigasa](https://ctftime.org/)
     - Codeforces: [khigasa](https://codeforces.com/profile/khigasa)
@@ -33,12 +32,13 @@ There are some SNS accounts on my sidebar. Here, I consolidate other misc accoun
 - Chess: [khigasa](https://www.chess.com/member/khigasa)
 - Cookpad: [khigasa](https://cookpad.com/kitchen/27012562)
 - Crates.io: [kHigasa](https://crates.io/users/kHigasa)
+- DockerHub: [khigasa](https://hub.docker.com/u/khigasa)
 - Gist: [khigasa](https://gist.github.com/khigasa)
 - GitLab: [@kHigasa](https://gitlab.com/kHigasa)
 - Go: [u-gen.nihonkiin.or.jp](https://u-gen.nihonkiin.or.jp)
 - Qiita: [@kHigasa](https://qiita.com/kHigasa)
+- Mastodon: [@andre](https://mastodon.noraworld.jp/@andre)
 - OpenRCE: [khigasa](https://www.openrce.org/profile/view/khigasa)
-- Quora: [khigasa](https://www.quora.com/profile/khigasa-Higasa-Koji)
 - RubyGems.org: [khigasa](https://rubygems.org/profiles/khigasa)
 - Shogi: [www.shogidojo.net](https://www.shogidojo.net)
 - SlideShare: [KojiHigasa](https://www.slideshare.net/KojiHigasa)
@@ -173,7 +173,7 @@ Even though I don't usually like listening to music, I have some preference.<br>
 ***"Would you listen to euphoric songs for the broken hearted or dirty voice's rap music which doesn't make any sense at all??? I would rather stare at white ceiling and count the dust dropped from it."*** (~~In my view, there are many such songs in J-Pop, so I hate listening to J-pop.~~)
 
 - Rock<br>
-**Linkin Park**. The vocalist Chester Charles Bennington has the greatest and the most beautiful shout in the world I think.
+**Linkin Park**. The vocalist **Chester Charles Bennington** has the greatest and the most beautiful shout in the world I think.
 - Classic<br>
 I like the symphony No.1, **Gustav Mahler**. I feel at ease most.
 - Lo-fi<br>
@@ -184,7 +184,7 @@ They are very impressive.
 ###### - Food
 - Curry
 - Vietnam coffee
-- Redbull
+- RedBull
 
 ###### - Football
 I'm a fan of **Andres Iniesta**.
