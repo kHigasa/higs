@@ -21,3 +21,8 @@ showActions:    false
 
 </form>
 
+<br>
+## Or communucate directly on WeChat(khigasa).
+
+![WeChat](/images/wechat.jpg "WeChat")
+

@@ -11,13 +11,43 @@ showActions:    false
 <!-- ### Career -->
 
 ### 👇Affiliation
+- IEEE Membership (student) **#95735156**
+![IEEE Membership](/images/ieee.jpg "IEEE Membership")
+
+### 👇Certification
 
 ### 👇Activities
-###### - Products
+##### - Participation
 
-###### - Writing
+##### - Products
+- Rucef
 
-###### - Competition
+    Toy **EDR** for **targeted threat**. There are scrayping, malware supervised learning, process monitoring on Linux, sandbox, internet emulating, web modules. They scrape malware and learn from it. They monitor process on Linux, and using pattern matching and dynamic analyzing with virtual machine and sandbox, internet emulator, they detect malware on the host.
+
+- aigohs
+
+    **Shogi Reinforcement Learning AI agent** and pure Python Shogi GUI, (and more ts web ui).
+
+- rustcli
+
+    I build UNIX/LINUX **commands** with rust.
+
+- [gap_vec](https://crates.io/crates/gap_vec)
+
+    the **data structure** for an editor
+
+- Vir
+
+    an **editor**
+
+
+- wafoo玩日本: [www.wafoo-japan.tw](https://www.wafoo-japan.tw/)
+
+    **media** for foreigners
+
+##### - Writing
+
+##### - Competition
 - Online
     - CTFTime: [khigasa](https://ctftime.org/)
     - Codeforces: [khigasa](https://codeforces.com/profile/khigasa)
@@ -36,14 +66,21 @@ There are some SNS accounts on my sidebar. Here, I consolidate other misc accoun
 - Gist: [khigasa](https://gist.github.com/khigasa)
 - GitLab: [@kHigasa](https://gitlab.com/kHigasa)
 - Go: [u-gen.nihonkiin.or.jp](https://u-gen.nihonkiin.or.jp)
+- HackerRank: [@kHigasa](https://www.hackerrank.com/kHigasa)
+- Hatena: [khigasa](http://profile.hatena.ne.jp/khigasa/)
 - Qiita: [@kHigasa](https://qiita.com/kHigasa)
+- LeetCode: [khigasa](https://leetcode.com/khigasa/)
 - Mastodon: [@andre](https://mastodon.noraworld.jp/@andre)
+- niconico: [khigasa](https://www.nicovideo.jp/user/28757975)
 - OpenRCE: [khigasa](https://www.openrce.org/profile/view/khigasa)
+- Periscope: [@khigasa](https://www.pscp.tv/khigasa)
+- Pinterest: [khigasa](https://www.pinterest.jp/kojihigasa/)
 - RubyGems.org: [khigasa](https://rubygems.org/profiles/khigasa)
 - Shogi: [www.shogidojo.net](https://www.shogidojo.net)
 - SlideShare: [KojiHigasa](https://www.slideshare.net/KojiHigasa)
 - SpeakerDeck: [khigasa](https://speakerdeck.com/khigasa)
 - StackExchange: [khigasa](https://stackexchange.com/users/12879879/khigasa)
+- Telegram: @khigasa
 - Twitch: [khigasa](https://www.twitch.tv/khigasa)
 - Zcashcommunity: [kHigasa](https://forum.zcashcommunity.com/u/khigasa)
 
@@ -129,6 +166,15 @@ gQf+d5E4LxMbgvnp2faEWDQAWYdCIGPQpWzKhpuhbI3HeDQS61yk5KPZ58Q9SflP
 - Bitcoin(BTC)
 ![Bitcoin(BTC)](/images/btc.png "Bitcoin-BTC")
 
+- PayPal.Me<br>
+[paypal.me/khigasa](https://paypal.me/khigasa)
+
+- PayPay
+![PayPay](/images/paypay.jpg "PayPay")
+
+- Kyash
+![Kyash](/images/kyash.jpg "Kyash")
+
 ### 👇Favorites
 ###### - Ideology
 **Nihilism**. I don't think this makes us *Untermensch* as Friedrich Wilhelm Nietzsche refered to.
@@ -185,6 +231,8 @@ They are very impressive.
 - Curry
 - Vietnam coffee
 - RedBull
+- Beer: **Asahi SUPER "DRY"**
+- Whiskey: **on the rocks, with soda**
 
 ###### - Football
 I'm a fan of **Andres Iniesta**.

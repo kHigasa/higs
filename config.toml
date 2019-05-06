@@ -126,7 +126,7 @@ paginate = 10
 [[menu.links]]
   weight = 10
   identifier = "youtube"
-  name = "Youtube"
+  name = "YouTube"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-youtube\"></i>"
   url = "https://www.youtube.com/channel/UCskbXTbY517iXKpUzN2unUA"
 
