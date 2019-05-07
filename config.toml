@@ -9,6 +9,10 @@ googleAnalytics = "UA-128672321-2"
 disqusShortname = "haggard-higs-hacks"
 paginate = 10
 
+[language]
+[language.en]
+[language.ja]
+
 [permalinks]
   post = "/:slug/"
 

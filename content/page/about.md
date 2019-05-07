@@ -46,6 +46,7 @@ showActions:    false
     **media** for foreigners
 
 ##### - Writing
+- 量子力学によるJuliaプログラミング入門(執筆途中)
 
 ##### - Competition
 - Online
@@ -70,6 +71,7 @@ There are some SNS accounts on my sidebar. Here, I consolidate other misc accoun
 - HackerRank: [@kHigasa](https://www.hackerrank.com/kHigasa)
 - Hatena: [khigasa](http://profile.hatena.ne.jp/khigasa/)
 - Hex: [khigasa](https://hex.pm/users/khigasa)
+- Julialang: [kHigasa](https://discourse.julialang.org/u/kHigasa)
 - Qiita: [@kHigasa](https://qiita.com/kHigasa)
 - LeetCode: [khigasa](https://leetcode.com/khigasa/)
 - Mastodon: [@andre](https://mastodon.noraworld.jp/@andre)
@@ -77,6 +79,7 @@ There are some SNS accounts on my sidebar. Here, I consolidate other misc accoun
 - OpenRCE: [khigasa](https://www.openrce.org/profile/view/khigasa)
 - Periscope: [@khigasa](https://www.pscp.tv/khigasa)
 - Pinterest: [khigasa](https://www.pinterest.jp/kojihigasa/)
+- ResearchGate: [KojiHigasa](https://www.researchgate.net/profile/Koji_Higasa)
 - RubyGems.org: [khigasa](https://rubygems.org/profiles/khigasa)
 - Shogi: [www.shogidojo.net](https://www.shogidojo.net)
 - SlideShare: [KojiHigasa](https://www.slideshare.net/KojiHigasa)
