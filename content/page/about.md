@@ -87,6 +87,7 @@ There are some SNS accounts on my sidebar. Here, I consolidate other misc accoun
 - StackExchange: [khigasa](https://stackexchange.com/users/12879879/khigasa)
 - Telegram: @khigasa
 - Twitch: [khigasa](https://www.twitch.tv/khigasa)
+- Wikipedia: [Khigasa](https://en.wikipedia.org/wiki/User:Khigasa)
 - Zcashcommunity: [kHigasa](https://forum.zcashcommunity.com/u/khigasa)
 
 ### 👇Workspace
