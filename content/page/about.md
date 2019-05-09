@@ -15,6 +15,7 @@ showActions:    false
 ![IEEE Membership](/images/ieee.jpg "IEEE Membership")
 
 ### Certification
+#### - InfoSec
 - **Offensive Security Certified Professional (OSCP)** (now preparing to pass :))
 
 ### Activities
@@ -61,6 +62,7 @@ showActions:    false
 - 0x00sec: [kHigasa](https://0x00sec.org/u/kHigasa)
 - Arc Forum: [khigasa](http://www.arclanguage.org/user?id=khigasa)
 - ArchWiki: [khigasa](https://wiki.archlinux.org/index.php/User:KHigasa)
+- AtCoder: [khigasa](https://atcoder.jp/users/khigasa)
 - Booklog: [khigasa](https://booklog.jp/users/khigasa/profile)
 - Chess: [khigasa](https://www.chess.com/member/khigasa)
 - Cookpad: [khigasa](https://cookpad.com/kitchen/27012562)
@@ -89,6 +91,7 @@ showActions:    false
 - SpeakerDeck: [khigasa](https://speakerdeck.com/khigasa)
 - StackExchange: [khigasa](https://stackexchange.com/users/12879879/khigasa)
 - Telegram: @khigasa
+- Topcoder: [khigasa](http://www.topcoder.com/members/khigasa)
 - Twitch: [khigasa](https://www.twitch.tv/khigasa)
 - Wikipedia: [Khigasa](https://en.wikipedia.org/wiki/User:Khigasa)
 - Zcashcommunity: [kHigasa](https://forum.zcashcommunity.com/u/khigasa)
