@@ -15,6 +15,7 @@ showActions:    false
 ![IEEE Membership](/images/ieee.jpg "IEEE Membership")
 
 ### 👇Certification
+- **Offensive Security Certified Professional (OSCP)** (now preparing to pass :))
 
 ### 👇Activities
 ##### - Participation
