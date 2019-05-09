@@ -55,9 +55,10 @@ showActions:    false
     - Kaggle: [khigasa](https://www.kaggle.com/khigasa)
 
 ### 👇Network
-There are some SNS accounts on my sidebar. Here, I consolidate other misc accounts or sites I use alphabetically.
+<details><summary>There are some SNS accounts on my sidebar. Here, I consolidate other misc accounts or sites I use alphabetically.</summary>
 
 - 0x00sec: [kHigasa](https://0x00sec.org/u/kHigasa)
+- Arc Forum: [khigasa](http://www.arclanguage.org/user?id=khigasa)
 - ArchWiki: [khigasa](https://wiki.archlinux.org/index.php/User:KHigasa)
 - Booklog: [khigasa](https://booklog.jp/users/khigasa/profile)
 - Chess: [khigasa](https://www.chess.com/member/khigasa)
@@ -79,6 +80,7 @@ There are some SNS accounts on my sidebar. Here, I consolidate other misc accoun
 - OpenRCE: [khigasa](https://www.openrce.org/profile/view/khigasa)
 - Periscope: [@khigasa](https://www.pscp.tv/khigasa)
 - Pinterest: [khigasa](https://www.pinterest.jp/kojihigasa/)
+- Project Euler: [khigasa](https://projecteuler.net/progress=khigasa)
 - ResearchGate: [KojiHigasa](https://www.researchgate.net/profile/Koji_Higasa)
 - RubyGems.org: [khigasa](https://rubygems.org/profiles/khigasa)
 - Shogi: [www.shogidojo.net](https://www.shogidojo.net)
@@ -89,6 +91,7 @@ There are some SNS accounts on my sidebar. Here, I consolidate other misc accoun
 - Twitch: [khigasa](https://www.twitch.tv/khigasa)
 - Wikipedia: [Khigasa](https://en.wikipedia.org/wiki/User:Khigasa)
 - Zcashcommunity: [kHigasa](https://forum.zcashcommunity.com/u/khigasa)
+</details>
 
 ### 👇Workspace
 - Desktop
@@ -241,7 +244,7 @@ They are very impressive.
 - Whiskey: **on the rocks, with soda**
 
 ###### - Football
-I'm a fan of **Andres Iniesta**.
+I'm a fan of **Andres Iniesta**, **GUTI.H**.
 
 ### 👇Interests
 ###### - Ideology
