@@ -10,17 +10,15 @@ showActions:    false
 
 <!-- ### Career -->
 
-### 👇Affiliation
+### Affiliation
 - IEEE Membership (student) **#95735156**
 ![IEEE Membership](/images/ieee.jpg "IEEE Membership")
 
-### 👇Certification
+### Certification
 - **Offensive Security Certified Professional (OSCP)** (now preparing to pass :))
 
-### 👇Activities
-##### - Participation
-
-##### - Products
+### Activities
+#### - Products
 - Rucef
 
     Toy **EDR** for **targeted threat**. There are scrayping, malware supervised learning, process monitoring on Linux, sandbox, internet emulating, web modules. They scrape malware and learn from it. They monitor process on Linux, and using pattern matching and dynamic analyzing with virtual machine and sandbox, internet emulator, they detect malware on the host.
@@ -46,16 +44,18 @@ showActions:    false
 
     **media** for foreigners
 
-##### - Writing
+#### - Writing
 - 量子力学によるJuliaプログラミング入門(執筆途中)
 
-##### - Competition
+#### - Competition
 - Online
     - CTFTime: [khigasa](https://ctftime.org/)
     - Codeforces: [khigasa](https://codeforces.com/profile/khigasa)
     - Kaggle: [khigasa](https://www.kaggle.com/khigasa)
 
-### 👇Network
+#### - Participation
+
+### Network
 <details><summary>There are some SNS accounts on my sidebar. Here, I consolidate other misc accounts or sites I use alphabetically.</summary>
 
 - 0x00sec: [kHigasa](https://0x00sec.org/u/kHigasa)
@@ -94,7 +94,7 @@ showActions:    false
 - Zcashcommunity: [kHigasa](https://forum.zcashcommunity.com/u/khigasa)
 </details>
 
-### 👇Workspace
+### Workspace
 - Desktop
     - CPU: Intel Corei7-9700K
     - Memory: 16GB
@@ -115,7 +115,7 @@ showActions:    false
 - Tools
     - git, neovim, zsh, tmux, fzf, ghq, peco, hub, xcode, InteliJ, Android Studio, chrome canary, chromium, firefox, aws, ..............
 
-### 👇Public Key
+### Public Key
 
 <details><summary>GitHub GnuPG(RSA4096bit)</summary>
 ```
@@ -172,7 +172,7 @@ gQf+d5E4LxMbgvnp2faEWDQAWYdCIGPQpWzKhpuhbI3HeDQS61yk5KPZ58Q9SflP
 ```
 </details>
 
-### 👇Wallet
+### Wallet
 - Bitcoin(BTC)
 ![Bitcoin(BTC)](/images/btc.png "Bitcoin-BTC")
 
@@ -185,45 +185,45 @@ gQf+d5E4LxMbgvnp2faEWDQAWYdCIGPQpWzKhpuhbI3HeDQS61yk5KPZ58Q9SflP
 - Kyash
 ![Kyash](/images/kyash.jpg "Kyash")
 
-### 👇Favorites
-###### - Ideology
+### Favorites
+#### - Ideology
 **Nihilism**. I don't think this makes us *Untermensch* as Friedrich Wilhelm Nietzsche refered to.
 
-###### - Gnu/Linux
+#### - Gnu/Linux
 I like all of the project including the history.
 
-###### - Programming Language
+#### - Programming Language
 - Rust
 - Lisp
 
-###### - Editor
+#### - Editor
 - Neovim<br>I love this dark power.
 - InteliJ<br>the greatest IDE I often use
 
-###### - My home
+#### - My home
 A great environment where I can concentrate on any and re-recognize me calmly.
 
 ***"I wanna go home as soon as possible."*** This is what I think whenever I'm out.
 
-###### - Art
+#### - Art
 - Abstract
 - Contemporary Art
 - Painting of Impressionism
 
-###### - Writing
+#### - Writing
 I feel some beautifulness at the Japanese of Modern Japanese literature.
 
 - Criticism
 - Essay
 
-###### - Physics
+#### - Physics
 My main interest is in the area of quantum.
 
-###### - Math
+#### - Math
 I like math theory the most. It is very logical and, moreover, I don't need to understand extremely high theorem and concept to solve it.
 
 
-###### - Music
+#### - Music
 Even though I don't usually like listening to music, I have some preference.<br>
 
 ***"Would you listen to euphoric songs for the broken hearted or dirty voice's rap music which doesn't make any sense at all??? I would rather stare at white ceiling and count the dust dropped from it."*** (~~In my view, there are many such songs in J-Pop, so I hate listening to J-pop.~~)
@@ -237,20 +237,20 @@ I can concentrate most.
 - K-Pop<br>
 They are very impressive.
 
-###### - Food
+#### - Food
 - Curry
 - Vietnam coffee
 - RedBull
 - Beer: **Asahi SUPER "DRY"**
 - Whiskey: **on the rocks, with soda**
 
-###### - Football
+#### - Football
 I'm a fan of **Andres Iniesta**, **GUTI.H**.
 
-### 👇Interests
-###### - Ideology
+### Interests
+#### - Ideology
 I'm interested in some agitators' and political crimers'.
 
-###### - Computation<br>
+#### - Computation<br>
 I have the strong interest about how computing machine work and how they process instructions and control system.
 
