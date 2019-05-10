@@ -6,25 +6,28 @@ showMeta:       false
 showActions:    false
 ---
 ## Koji Higasa ( 樋笠 宏次 )
+- - -
 ### Profile
 I am a Japanese undergraduate who major in Physics and enjoy computing.
 
 If you're interested, please read below :)
-
+- - -
 <!--toc-->
-
 <!-- ### Career -->
 
+- - -
 ### Affiliation
 - IEEE Membership (student) **#95735156**
 ![IEEE Membership](/images/ieee.jpg "IEEE Membership")
 
 - Nihon Kiin **26964076**
 
+- - -
 ### Certification
 #### - InfoSec
 - **Offensive Security Certified Professional (OSCP)** (now preparing to pass :))
 
+- - -
 ### Activities
 #### - Products
 - Rucef
@@ -67,6 +70,7 @@ If you're interested, please read below :)
 
 #### - Participation
 
+- - -
 ### Network
 <details><summary>There are some SNS accounts on my sidebar. Here, I consolidate other misc accounts or sites I use alphabetically.</summary>
 
@@ -108,6 +112,7 @@ If you're interested, please read below :)
 - Zcashcommunity: [kHigasa](https://forum.zcashcommunity.com/u/khigasa)
 </details>
 
+- - -
 ### Workspace
 - Desktop
     - CPU: Intel Corei7-9700K
@@ -129,6 +134,7 @@ If you're interested, please read below :)
 - Tools
     - git, neovim, zsh, tmux, fzf, ghq, peco, hub, xcode, InteliJ, Android Studio, chrome canary, chromium, firefox, aws, ..............
 
+- - -
 ### Public Key
 
 <details><summary>GitHub GnuPG(RSA4096bit)</summary>
@@ -186,6 +192,7 @@ gQf+d5E4LxMbgvnp2faEWDQAWYdCIGPQpWzKhpuhbI3HeDQS61yk5KPZ58Q9SflP
 ```
 </details>
 
+- - -
 ### Wallet
 - Bitcoin(BTC)
 ![Bitcoin(BTC)](/images/btc.png "Bitcoin-BTC")
@@ -199,6 +206,7 @@ gQf+d5E4LxMbgvnp2faEWDQAWYdCIGPQpWzKhpuhbI3HeDQS61yk5KPZ58Q9SflP
 - Kyash
 ![Kyash](/images/kyash.jpg "Kyash")
 
+- - -
 ### Favorites
 #### - Ideology
 **Nihilism**. I don't think this makes us *Untermensch* as Friedrich Wilhelm Nietzsche refered to.
@@ -261,6 +269,7 @@ They are very impressive.
 #### - Football
 I'm a fan of **Andres Iniesta**, **GUTI.H**.
 
+- - -
 ### Interests
 #### - Ideology
 I'm interested in some agitators' and political crimers'.
