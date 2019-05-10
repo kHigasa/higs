@@ -6,13 +6,21 @@ showMeta:       false
 showActions:    false
 ---
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
-## Koji Higasa(樋笠 宏次)
+## Koji Higasa ( 樋笠 宏次 )
+### Profile
+In short, I am a Japanese undergraduate who major in Physics and enjoy computing.
+
+If you're interested, please read below :)
+
+<!--toc-->
 
 <!-- ### Career -->
 
 ### Affiliation
 - IEEE Membership (student) **#95735156**
 ![IEEE Membership](/images/ieee.jpg "IEEE Membership")
+
+- Nihon Kiin **26964076**
 
 ### Certification
 #### - InfoSec
@@ -22,17 +30,17 @@ showActions:    false
 #### - Products
 - Rucef
 
-    Toy **EDR** for **targeted threat**. There are scrayping, malware supervised learning, process monitoring on Linux, sandbox, internet emulating, web modules. They scrape malware and learn from it. They monitor process on Linux, and using pattern matching and dynamic analyzing with virtual machine and sandbox, internet emulator, they detect malware on the host.
+    Toy **EDR** for **targeted threat**. They scrape malware and learn from it. They monitor process on Linux, and using pattern matching and dynamic analyzing with virtual machine and sandbox, internet emulator, they detect malware on the host.
 
-- aigohs
+- Aigohs
 
     **Shogi Reinforcement Learning AI agent** and pure Python Shogi GUI, (and more ts web ui).
 
-- rustcli
+- Rustcli
 
     I build UNIX/LINUX **commands** with rust.
 
-- [gap_vec](https://crates.io/crates/gap_vec)
+- Gap Vector : [gap_vec](https://crates.io/crates/gap_vec)
 
     the **data structure** for an editor
 
@@ -40,13 +48,17 @@ showActions:    false
 
     an **editor**
 
+- PemphredoCL
 
-- wafoo玩日本: [www.wafoo-japan.tw](https://www.wafoo-japan.tw/)
+    **compiler** of static typed lang like CLisp
+
+
+- Wafoo玩日本: [www.wafoo-japan.tw](https://www.wafoo-japan.tw/)
 
     **media** for foreigners
 
 #### - Writing
-- 量子力学によるJuliaプログラミング入門(執筆途中)
+- 量子力学によるJuliaプログラミング入門 (now writing with [SATySFi](https://github.com/gfngfn/SATySFi)) !Japanese only :(
 
 #### - Competition
 - Online
