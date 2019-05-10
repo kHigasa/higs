@@ -5,10 +5,9 @@ comments:       false
 showMeta:       false
 showActions:    false
 ---
-<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
 ## Koji Higasa ( 樋笠 宏次 )
 ### Profile
-In short, I am a Japanese undergraduate who major in Physics and enjoy computing.
+I am a Japanese undergraduate who major in Physics and enjoy computing.
 
 If you're interested, please read below :)
 
