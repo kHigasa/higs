@@ -267,7 +267,7 @@ They are very impressive.
 - Whiskey: **on the rocks, with soda**
 
 #### - Football
-I'm a fan of **Andres Iniesta**, **GUTI.H**.
+I'm a fan of **Andres Iniesta** and **Paul Scholes**, **Angel Di Maria**, **David Silva**.
 
 - - -
 ### Interests
