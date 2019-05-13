@@ -151,12 +151,6 @@ If you're interested, please read below :)
 - PayPal.Me<br>
 [paypal.me/khigasa](https://paypal.me/khigasa)
 
-- PayPay
-![PayPay](/images/paypay.jpg "PayPay")
-
-- Kyash
-![Kyash](/images/kyash.jpg "Kyash")
-
 - - -
 ## Favorites
 ### - Ideology
