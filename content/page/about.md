@@ -225,23 +225,26 @@ I'm interested in some agitators' and political crimers'.
 I have the strong interest about how computing machine work and how they process instructions and control system.
 
 ---
+## Finally
 
-<!--
+Thank you very much for your interest. Please enjoy yourself.
+
 ```
 
-                                     __....,,,,'"'"'"'" 
-                      __....,,,'''"""           ,     ,     ,
-            __.,.,''""            ,/    ,/    ./
-          ,'           ,'/___,'/   ,'/   ,
-         /    ,  .     '     ' ""' '--,/    .. ..
-        /    /  , Y -=-    ,'   ,   ,. .`-..||_|| ..
-       /            , ,' ,   , f ,  \=\ Y   || ||`||_..
-      //                   `._ )-."`.     /|         `.| |        `.`-||-\\/
-     //                        "`._   "`--' j          j' j          `-`---'
-    //                            "`,-  ,'/       ,-'"  /
-  ,'  `,                       ,'",__,-'       /,, ,-'
-  `_'`_'                             Vvv'            VVv'
+                           __..,,'"'" 
+                   __.,,''"
+             __.,'"                              /
+           ,'                            _.,,  .'
+          /                ..,,____''"//'    ` |
+         /     ____..,,''""          ..       ``
+        /.,''"" //                   //       `*
+       //      //                   ..        "`
+      //      //                    ||        ``
+     //      //                    ..         `%
+    //      //                     //         ``
+  ,'  `,  ,'  `,                 ,' ` ,     ,.'`, 
+  `_'`_'  `_'`_'                 `_'`_'    (_.'`_)
 ```
 
 **\*Lisp alien\*** ( Good Bye... :)
--->
+
