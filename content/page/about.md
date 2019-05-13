@@ -137,7 +137,7 @@ If you're interested, please read below :)
 
 - - -
 ## Public Key
-`GnuPG ( RSA4096bit )` Public Key's fingerprint hashed by `sha3-512`. When you wanna use my public key (separately I send), please make sure this hash value.
+`GnuPG ( RSA4096bit )` Public Key's fingerprint hashed by `sha3-512`. When you want to use my public key (separately I send), please make sure this hash value.
 
 ```
 715e8927aebb34e43796f10cc6fd3e51837ea2c206e3344b08533ab6dd28d714c58d2faafbf026029ab99ec8252afb1d25fcc727a43b7eeda9486a0d3fd0cf89
