@@ -160,6 +160,8 @@ If you're interested, please read below :)
 I like all of the project including the history.
 
 ### - Programming Language
+Actually, I wanna use these two lang only.
+
 - Rust
 - Lisp
 
@@ -222,3 +224,24 @@ I'm interested in some agitators' and political crimers'.
 ### - Computation<br>
 I have the strong interest about how computing machine work and how they process instructions and control system.
 
+---
+
+<!--
+```
+
+                                     __....,,,,'"'"'"'" 
+                      __....,,,'''"""           ,     ,     ,
+            __.,.,''""            ,/    ,/    ./
+          ,'           ,'/___,'/   ,'/   ,
+         /    ,  .     '     ' ""' '--,/    .. ..
+        /    /  , Y -=-    ,'   ,   ,. .`-..||_|| ..
+       /            , ,' ,   , f ,  \=\ Y   || ||`||_..
+      //                   `._ )-."`.     /|         `.| |        `.`-||-\\/
+     //                        "`._   "`--' j          j' j          `-`---'
+    //                            "`,-  ,'/       ,-'"  /
+  ,'  `,                       ,'",__,-'       /,, ,-'
+  `_'`_'                             Vvv'            VVv'
+```
+
+**\*Lisp alien\*** ( Good Bye... :)
+-->
