@@ -153,75 +153,72 @@ If you're interested, please read below :)
 
 - - -
 ## Favorites
-### - Ideology
+- **Ideology**<br>
 **Nihilism**. I don't think this makes us *Untermensch* as Friedrich Wilhelm Nietzsche refered to.
 
-### - Gnu/Linux
+- **Gnu/Linux**<br>
 I like all of the project including the history.
 
-### - Programming Language
+- **Programming Language**<br>
 Actually, I wanna use these two lang only.
+    - Rust
+    - Lisp
 
-- Rust
-- Lisp
+- **Editor**<br>
+    - Neovim<br>I love this dark power.
+    - InteliJ<br>the greatest IDE I often use
 
-### - Editor
-- Neovim<br>I love this dark power.
-- InteliJ<br>the greatest IDE I often use
-
-### - My home
+- **My home**<br>
 A great environment where I can concentrate on any and re-recognize me calmly.
 
-***"I wanna go home as soon as possible."*** This is what I think whenever I'm out.
+    ***"I wanna go home as soon as possible."*** This is what I think whenever I'm out.
 
-### - Art
-- Abstract
-- Contemporary Art
-- Painting of Impressionism
+- **Art**<br>
+    - Abstract
+    - Contemporary Art
+    - Painting of Impressionism
 
-### - Writing
+- **Writing**<br>
 I feel some beautifulness at the Japanese of Modern Japanese literature.
+    - Criticism
+    - Essay
 
-- Criticism
-- Essay
-
-### - Physics
+- **Physics**<br>
 My main interest is in the area of quantum.
 
-### - Math
+- **Math**<br>
 I like math theory the most. It is very logical and, moreover, I don't need to understand extremely high theorem and concept to solve it.
 
 
-### - Music
+- **Music**<br>
 Even though I don't usually like listening to music, I have some preference.<br>
 
-***"Would you listen to euphoric songs for the broken hearted or dirty voice's rap music which doesn't make any sense at all??? I would rather stare at white ceiling and count the dust dropped from it."*** (~~In my view, there are many such songs in J-Pop, so I hate listening to J-pop.~~)
+    ***"Would you listen to euphoric songs for the broken hearted or dirty voice's rap music which doesn't make any sense at all??? I would rather stare at white ceiling and count the dust dropped from it."*** (~~In my view, there are many such songs in J-Pop, so I hate listening to J-pop.~~)
+    - Rock<br>
+    **Linkin Park**. The vocalist **Chester Charles Bennington** has the greatest and the most beautiful shout in the world I think.
+    - Classic<br>
+    I like the symphony No.1, **Gustav Mahler**. I feel at ease most.
+    - Lo-fi<br>
+    I can concentrate most.
+    - K-Pop<br>
+    They are very impressive.
 
-- Rock<br>
-**Linkin Park**. The vocalist **Chester Charles Bennington** has the greatest and the most beautiful shout in the world I think.
-- Classic<br>
-I like the symphony No.1, **Gustav Mahler**. I feel at ease most.
-- Lo-fi<br>
-I can concentrate most.
-- K-Pop<br>
-They are very impressive.
+- **Food**<br>
+    - Curry
+    - Vietnam coffee
+    - RedBull
+    - Beer: **Asahi SUPER "DRY"**
+    - Whiskey: **on the rocks, with soda**
 
-### - Food
-- Curry
-- Vietnam coffee
-- RedBull
-- Beer: **Asahi SUPER "DRY"**
-- Whiskey: **on the rocks, with soda**
-
-### - Football
+- **Football**<br>
 I'm a fan of **Andres Iniesta** and **Paul Scholes**, **Angel Di Maria**, **David Silva**.
 
 - - -
 ## Interests
-### - Ideology
+- **Ideology**<br>
 I'm interested in some agitators' and political crimers'.
 
-### - Computation<br>
+- **Computation**<br>
 I have the strong interest about how computing machine work and how they process instructions and control system.
 
 ---
