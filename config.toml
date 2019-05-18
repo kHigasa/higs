@@ -27,7 +27,7 @@ paginate = 10
   job = "Bachelor of Science in Physics"
   location = "Tokyo, Japan"
   picture = "images/avatar.jpg"
-  twitter = "andreHiGasa"
+  twitter = "kohgasa"
 
 [[menu.main]]
   weight = 1
@@ -108,7 +108,7 @@ paginate = 10
   identifier = "twitter"
   name = "Twitter"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-twitter\"></i>"
-  url = "https://twitter.com/andreHiGasa"
+  url = "https://twitter.com/kohgasa"
 [[menu.links]]
   weight = 7
   identifier = "facebook"
