@@ -153,6 +153,14 @@ If you're interested, please read below :)
 [paypal.me/khigasa](https://paypal.me/khigasa)
 
 - - -
+## Interests
+- **Ideology**<br>
+I'm interested in some agitators' and political crimers'.
+
+- **Computation**<br>
+I have the strong interest about how computing machine work and how they process instructions and control system.
+
+- - -
 ## Favorites
 - **Ideology**<br>
 **Nihilism**. I don't think this makes us *Untermensch* as Friedrich Wilhelm Nietzsche refered to.
@@ -214,13 +222,10 @@ Even though I don't usually like listening to music, I have some preference.<br>
 - **Football**<br>
 I'm a fan of **Andres Iniesta** and **Paul Scholes**, **Angel Di Maria**, **David Silva**.
 
-- - -
-## Interests
-- **Ideology**<br>
-I'm interested in some agitators' and political crimers'.
+### Dislikes
+Here are my miscellaneous dislikes, sorry... :(
 
-- **Computation**<br>
-I have the strong interest about how computing machine work and how they process instructions and control system.
+Psychology, J-Pop, Centralization of power, Big-mouth, Noisy eater, Crowds, ...
 
 ---
 ## Finally
