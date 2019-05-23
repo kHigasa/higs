@@ -225,7 +225,7 @@ I'm a fan of **Andres Iniesta** and **Paul Scholes**, **Angel Di Maria**, **Davi
 ### Dislikes
 Here are my miscellaneous dislikes, sorry... :(
 
-Psychology, J-Pop, Centralization of power, Big-mouth, Noisy eater, Crowds, ...
+Noisy eater, Big-mouth, Crowds, Psychology, J-Pop, Centralization of power, Japanese government, ... :(
 
 ---
 ## Finally
