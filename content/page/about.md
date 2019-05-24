@@ -14,13 +14,16 @@ If you're interested, please read below :)
 - - -
 <!--toc-->
 <!-- ## Career -->
+<!-- ## Education -->
 
 - - -
 ## Affiliation
-- IEEE Membership (student) **#95735156**
+- e-Residency : Estonian personal identification code **39706190031**
+
+- IEEE Membership (student) : **#95735156**
 ![IEEE Membership](/images/ieee.jpg "IEEE Membership")
 
-- Nihon Kiin **26964076**
+- Nihon Kiin : **26964076**
 
 - - -
 ## Certification
@@ -225,7 +228,7 @@ I'm a fan of **Andres Iniesta** and **Paul Scholes**, **Angel Di Maria**, **Davi
 ### Dislikes
 Here are my miscellaneous dislikes, sorry... :(
 
-Noisy eater, Big-mouth, Crowds, Psychology, J-Pop, Centralization of power, Japanese government, ... :(
+Noisy eater, Big-mouth, Crowds, Psychology, J-Pop, Centralization of power, Japanese government, ...
 
 ---
 ## Finally
