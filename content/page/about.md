@@ -355,7 +355,7 @@ Thank you very much for your interest. Please enjoy yourself :)
 | &Omicron; (&amp;Omicron;) | O | &omicron; (&amp;omicron;) | o | | |
 | &Pi; (&amp;Pi;) | \Pi | &pi; (&amp;pi;) | \pi | &piv; (&amp;piv;) | \varpi |
 | &Rho; (&amp;Rho;) | P | &rho; (&amp;rho;) | \rho | ϱ | \varrho |
-| &Sigma; (&amp;Sigma;) | \Sigma | &sigma; (&amp;sigma;) | \sigma | &sigmaf (&amp;sigmaf;) | \varsigma |
+| &Sigma; (&amp;Sigma;) | \Sigma | &sigma; (&amp;sigma;) | \sigma | &sigmaf; (&amp;sigmaf;) | \varsigma |
 | &Tau; (&amp;Tau;) | T | &tau; (&amp;tau;) | \tau | | |
 | &Upsilon; (&amp;Upsilon;) | \Upsilon | &upsilon; (&amp;upsilon;) | \upsilon | | |
 | &Phi; (&amp;Phi;) | \Phi | ϕ | \phi | &phi; (&amp;phi;) | \varphi |
@@ -407,15 +407,15 @@ Thank you very much for your interest. Please enjoy yourself :)
 
 - German letters <code>mathfrak</code>
 
-| Uppercase | Lowercase |
-|:-----------|:-----------|
-| &Auml; | &amp;Auml; |
-| &auml; | &amp;auml; |
-| &Ouml; | &amp;Ouml; |
-| &ouml; | &amp;ouml; |
-| &Uuml; | &amp;Uuml; |
-| &uuml; | &amp;uuml; |
-| &szlig; | &amp;szlig; |
+| Character |
+|:-----------|
+| &Auml; (&amp;Auml;) |
+| &auml; (&amp;auml;) |
+| &Ouml; (&amp;Ouml;) |
+| &ouml; (&amp;ouml;) |
+| &Uuml; (&amp;Uuml;) |
+| &uuml; (&amp;uuml;) |
+| &szlig; (&amp;szlig;) |
 
 <br>
 
