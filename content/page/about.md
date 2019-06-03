@@ -276,7 +276,7 @@ Thank you very much for your interest. Please enjoy yourself :)
 
 ## Appendix
 
-- Special character
+- Special characters
 
 | Character | LaTeX |
 |:-----------|:----------:|
@@ -420,7 +420,8 @@ Thank you very much for your interest. Please enjoy yourself :)
 <br>
 
 - Theorem etc.
-
+    - Theorem 1.1
 $$
-T = S((1 + \frac{E}{R})^{F} - 1)
+a = bq + r (q, r \in {\bf Z}, 0 \le r < b)
 $$
+where a is integer and b is non-zero integer.
