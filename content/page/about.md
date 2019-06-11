@@ -225,7 +225,7 @@ Even though I don't usually like listening to music, I have some preference.<br>
     - Whiskey: **on the rocks, with soda**
 
 - **Football**<br>
-I'm a fan of **Andres Iniesta** and **Paul Scholes**, **Angel Di Maria**, **David Silva**.
+I'm a fan of **Andres Iniesta** and **Dennis Bergkamp**, **Angel Di Maria**, **David Silva**.
 
 ### Dislikes
 Here are my miscellaneous dislikes, sorry... :(
