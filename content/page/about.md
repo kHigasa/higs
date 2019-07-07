@@ -33,6 +33,7 @@ If you're interested, please read below :)
 - - -
 ## Activities
 ### - Products
+<!--
 - Rucef
 
     Toy **EDR** for **targeted threat**. They scrape malware and learn from it. They monitor process on Linux, and using pattern matching and dynamic analyzing with virtual machine and sandbox, internet emulator, they detect malware on the host.
@@ -40,8 +41,9 @@ If you're interested, please read below :)
 - Aigohs
 
     **Shogi Reinforcement Learning AI agent** and pure Python Shogi GUI, (and more ts web ui).
+-->
 
-- Rustcli
+- Rustcli [WIP]
 
     I build UNIX/LINUX **commands** with rust.
 
@@ -49,6 +51,7 @@ If you're interested, please read below :)
 
     the **data structure** for an editor
 
+<!--
 - Vir
 
     an **editor**
@@ -56,7 +59,7 @@ If you're interested, please read below :)
 - PemphredoCL
 
     **compiler** of static typed lang like CLisp
-
+-->
 
 - Wafoo玩日本: [www.wafoo-japan.tw](https://www.wafoo-japan.tw/)
 
