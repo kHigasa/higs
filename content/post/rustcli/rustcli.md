@@ -18,8 +18,8 @@ I write basic UNIX/LINUX commands in Rust.
 
 **Commands:**
 
-- [mkdir](https://khigasa.github.io/higs/post/rustcli/mkdir/) - make directories
-- [cat](https://khigasa.github.io/higs/post/rustcli/cat/) - concatenate files and print on the standard output
+- [mkdir](https://khigasa.github.io/higs/mkdir/) - make directories
+- [cat](https://khigasa.github.io/higs/cat/) - concatenate files and print on the standard output
 
 ... coming soon.
 
