@@ -10,6 +10,7 @@ tags:
 - explanation
 keywords:
 - hacking
+draft: true
 thumbnailImage: images/kogasa.jpeg
 --- 
 <!--more-->
