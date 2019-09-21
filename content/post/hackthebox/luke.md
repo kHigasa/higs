@@ -5,14 +5,36 @@ categories:
 - information security
 - web
 tags:
-- hackthebox
+- HackTheBox
 - demonstration
 - explanation
 keywords:
 - hacking
 draft: true
 thumbnailImage: images/kogasa.jpeg
---- 
+---
+
+# abstract
+
+I enjoy hacking at [HackTheBox](https://www.hackthebox.eu/):) Today, I try the machine, *Luke*.
+I explain it in detail, show the PoC and demonstrate it on my YouTube channel.
+ 
 <!--more-->
 
 <!--toc-->
+
+# PoC
+
+# Active Information Gathering
+
+## Port Scanning
+
+## Enumeration
+
+### Tools
+- Nmap
+- [gobuster](https://github.com/OJ/gobuster)
+
+# Password Attacks
+
+
