@@ -14,8 +14,6 @@ draft: true
 thumbnailImage: images/kogasa.jpeg
 ---
 
-# abstract
-
 I enjoy hacking at [HackTheBox](https://www.hackthebox.eu/):) Today, I try the machine, *Luke*.
 I explain it in detail, show the PoC and demonstrate it on my YouTube channel.
  

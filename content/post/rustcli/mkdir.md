@@ -2,12 +2,13 @@
 title: "mkdir"
 date: 2019-02-14T10:04:59+09:00
 categories:
+- build on your own
 - commands
-- mkdir
 tags:
-- rust
+- build on your own
+- commands
 keywords:
-- coding challenge
+- Rust
 thumbnailImage: https://1.bp.blogspot.com/-hVGiemkjg58/V5NECYgvcxI/AAAAAAAA8gk/aj0H6AbBIV4XOIdF964KDN48oNCsy0qjgCLcB/s800/ha_kenkou_oldman.png
 ---
 
@@ -23,13 +24,13 @@ This time, I wrote unix `mkdir`--*make directories* command with rust.
 *Live coding demo on my YouTube channel:*
 {{< youtube d2k3FXUmH7I>}}
 
-## Tasks
+# Tasks
 
 - Make directories -> use `std::fs` module `create_dir` function
 - Parse command line option -> use `getopts` crate
 - Set permission -> use `std::os::unix::fs` module
 
-### Pseudo code
+## Pseudo code
 
 ```
 options.match

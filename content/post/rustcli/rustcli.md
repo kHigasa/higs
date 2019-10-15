@@ -2,11 +2,13 @@
 title: "Rustcli"
 date: 2019-02-13T13:43:54+09:00
 categories:
+- build on your own
 - commands
 tags:
-- docs
+- build on your own
+- commands
 keywords:
-- coding challenge
+- Rust
 thumbnailImage: https://3.bp.blogspot.com/-LBx5ih9NlO8/USwPZHyoJvI/AAAAAAAAOYY/RxOWk8mBra4/s1600/osonaemono.png
 ---
 
