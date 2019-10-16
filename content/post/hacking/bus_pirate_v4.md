@@ -11,7 +11,6 @@ tags:
 keywords:
 - Bus Pirate v4
 thumbnailImage: images/bus_pirate_v4.jpg
-draft: true
 ---
 
 PC-電子デバイス間のデバッグ・解析ツールである[`Bus Pirate v4`](https://www.seeedstudio.com/Bus-Pirate-v4.html)の基盤を解析し, その挙動を回路基盤より見ることが本稿での狙いである.
