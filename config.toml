@@ -34,13 +34,13 @@ paginate = 10
   identifier = "home"
   name = "Home"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
-  url = "/post"
+  url = "/"
 [[menu.main]]
   weight = 2
   identifier = "about"
   name = "About"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
-  url = "/page/about"
+  url = "/about"
 [[menu.main]]
   weight = 3
   identifier = "categories"
@@ -58,7 +58,7 @@ paginate = 10
   identifier = "search"
   name = "Search"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-search\"></i>"
-  url = "/page/search"
+  url = "/search"
   class = "st-search-show-outputs"
 [[menu.main]]
   weight = 6
@@ -71,7 +71,7 @@ paginate = 10
   identifier = "contact"
   name = "Contact"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-envelope\"></i>"
-  url = "/page/contact"
+  url = "/contact"
 
 [[menu.links]]
   weight = 1
@@ -167,3 +167,6 @@ paginate = 10
 
 [blackfriday]
   hrefTargetBlank = true
+
+[markup.goldmark.renderer]
+  unsafe = true
