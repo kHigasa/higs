@@ -327,10 +327,7 @@ Thank you very much for your interest. Please enjoy yourself :)
 | &mp; (&amp;mp;) | \mp |
 | &times; (&amp;times;) | \times |
 | &div; (&amp;div;) | \div |
-| &sum; (&amp;sum;) | \sum |
-| &prod; (&amp;prod;) | \prod |
-| &lceil; (&amp;lceil;) | \lceil |
-| &rceil; (&amp;rceil;) | \rceil |
+| &sum; (&amp;sum;) | \sum | | &prod; (&amp;prod;) | \prod | | &lceil; (&amp;lceil;) | \lceil | | &rceil; (&amp;rceil;) | \rceil |
 | &lfloor; (&amp;lfloor;) | \lfloor |
 | &rfloor; (&amp;rfloor;) | \rfloor |
 | &infin; (&amp;infin;) | \infty |
