@@ -23,7 +23,7 @@ paginate = 10
 
 [author]
   name = "kHigasa"
-  bio = "Coding in C/C++ & Python is my basic skill set."
+  bio = "Coding in C/C++ & Julia is my basic skill set."
   job = "Bachelor of Science in Physics"
   location = "Tokyo, Japan"
   picture = "images/avatar.jpg"
