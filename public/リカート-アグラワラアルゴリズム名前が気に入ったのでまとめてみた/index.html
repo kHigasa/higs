@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.76.5 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="author" content="kHigasa">
+<meta name="keywords" content="Ricart-Agrawala">
+<meta name="description" content="この記事はGMOペパボ Advent Calendar 2018 12月16日の記事です。
+OPERATING SYSTEM CONCEPTSを読んで面白かった章の一つ process synchronization についてちょっと深めてみました。">
+
+
+<meta property="og:description" content="この記事はGMOペパボ Advent Calendar 2018 12月16日の記事です。
+OPERATING SYSTEM CONCEPTSを読んで面白かった章の一つ process synchronization についてちょっと深めてみました。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="リカート-アグラワラアルゴリズム、名前が気に入ったのでまとめてみた">
+<meta name="twitter:title" content="リカート-アグラワラアルゴリズム、名前が気に入ったのでまとめてみた">
+<meta property="og:url" content="https://khigasa.github.io/higs/%E3%83%AA%E3%82%AB%E3%83%BC%E3%83%88-%E3%82%A2%E3%82%B0%E3%83%A9%E3%83%AF%E3%83%A9%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E5%90%8D%E5%89%8D%E3%81%8C%E6%B0%97%E3%81%AB%E5%85%A5%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7%E3%81%BE%E3%81%A8%E3%82%81%E3%81%A6%E3%81%BF%E3%81%9F/">
+<meta property="twitter:url" content="https://khigasa.github.io/higs/%E3%83%AA%E3%82%AB%E3%83%BC%E3%83%88-%E3%82%A2%E3%82%B0%E3%83%A9%E3%83%AF%E3%83%A9%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E5%90%8D%E5%89%8D%E3%81%8C%E6%B0%97%E3%81%AB%E5%85%A5%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7%E3%81%BE%E3%81%A8%E3%82%81%E3%81%A6%E3%81%BF%E3%81%9F/">
+<meta property="og:site_name" content="|-|-|-| Haggard Higs&#39; Hacks">
+<meta property="og:description" content="この記事はGMOペパボ Advent Calendar 2018 12月16日の記事です。
+OPERATING SYSTEM CONCEPTSを読んで面白かった章の一つ process synchronization についてちょっと深めてみました。">
+<meta name="twitter:description" content="この記事はGMOペパボ Advent Calendar 2018 12月16日の記事です。
+OPERATING SYSTEM CONCEPTSを読んで面白かった章の一つ process synchronization についてちょっと深めてみました。">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2018-12-16T11:27:08">
+  
+  
+    <meta property="article:modified_time" content="2018-12-16T11:27:08">
+  
+  
+  
+    
+      <meta property="article:section" content="computer science">
+    
+      <meta property="article:section" content="operating system">
+    
+  
+  
+    
+      <meta property="article:tag" content="computer science">
+    
+      <meta property="article:tag" content="operating system">
+    
+      <meta property="article:tag" content="Advent Calender">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+  <meta name="twitter:site" content="@kohgasa">
+
+
+  <meta name="twitter:creator" content="@kohgasa">
+
+
+
+
+
+
+  <meta property="og:image" content="https://khigasa.github.io/higs/images/thumb001.jpg">
+  <meta property="twitter:image" content="https://khigasa.github.io/higs/images/thumb001.jpg">
+
+
+
+
+
+  <meta property="og:image" content="https://khigasa.github.io/higs/images/avatar.jpg">
+  <meta property="twitter:image" content="https://khigasa.github.io/higs/images/avatar.jpg">
+
+
+    <title>リカート-アグラワラアルゴリズム、名前が気に入ったのでまとめてみた</title>
+
+    <link rel="icon" href="https://khigasa.github.io/higs/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://khigasa.github.io/higs/%E3%83%AA%E3%82%AB%E3%83%BC%E3%83%88-%E3%82%A2%E3%82%B0%E3%83%A9%E3%83%AF%E3%83%A9%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E5%90%8D%E5%89%8D%E3%81%8C%E6%B0%97%E3%81%AB%E5%85%A5%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7%E3%81%BE%E3%81%A8%E3%82%81%E3%81%A6%E3%81%BF%E3%81%9F/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://khigasa.github.io/higs/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-128672321-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://khigasa.github.io/higs/">|-|-|-| Haggard Higs&#39; Hacks</a>
+  </div>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://khigasa.github.io/higs/#about">
+          <img class="sidebar-profile-picture" src="https://khigasa.github.io/higs/images/avatar.jpg" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">kHigasa</h4>
+        
+          <h5 class="sidebar-profile-bio">Coding in C/C++ &amp; Julia is my basic skill set.</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://khigasa.github.io/higs/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://khigasa.github.io/higs/about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://khigasa.github.io/higs/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://khigasa.github.io/higs/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link open-algolia-search" href="https://khigasa.github.io/higs/search">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-search"></i>
+      
+      <span class="sidebar-button-desc">Search</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://khigasa.github.io/higs/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://khigasa.github.io/higs/contact">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-envelope"></i>
+      
+      <span class="sidebar-button-desc">Contact</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/kHigasa" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://stackoverflow.com/users/9315234/koji-higasa" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-stack-overflow"></i>
+      
+      <span class="sidebar-button-desc">Stack Overflow</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.reddit.com/user/khigasa" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-reddit"></i>
+      
+      <span class="sidebar-button-desc">Reddit</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://medium.com/@khigasa" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-medium"></i>
+      
+      <span class="sidebar-button-desc">Medium</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.quora.com/profile/khigasa-Higasa-Koji" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-quora"></i>
+      
+      <span class="sidebar-button-desc">Quora</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://twitter.com/kohgasa" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-twitter"></i>
+      
+      <span class="sidebar-button-desc">Twitter</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.facebook.com/khigasa" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-facebook"></i>
+      
+      <span class="sidebar-button-desc">Facebook</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.linkedin.com/in/koji-higasa-21a83a171/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-linkedin"></i>
+      
+      <span class="sidebar-button-desc">LinkedIn</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.instagram.com/khigasa/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-instagram"></i>
+      
+      <span class="sidebar-button-desc">Instagram</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.youtube.com/channel/UCskbXTbY517iXKpUzN2unUA" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-youtube"></i>
+      
+      <span class="sidebar-button-desc">YouTube</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://khigasa.github.io/higs/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      リカート-アグラワラアルゴリズム、名前が気に入ったのでまとめてみた
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2018-12-16T11:27:08&#43;09:00">
+        
+  December 16, 2018
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://khigasa.github.io/higs/categories/computer-science">computer science</a>, 
+    
+      <a class="category-link" href="https://khigasa.github.io/higs/categories/operating-system">operating system</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>この記事は<a href="https://qiita.com/advent-calendar/2018/pepabo">GMOペパボ Advent Calendar 2018</a> 12月16日の記事です。</p>
+<p><a href="http://iips.icci.edu.iq/images/exam/Abraham-Silberschatz-Operating-System-Concepts---9th2012.12.pdf">OPERATING SYSTEM CONCEPTS</a>を読んで面白かった章の一つ <em>process synchronization</em> についてちょっと深めてみました。</p>
+<h1 id="table-of-contents">Table of Contents</h1><nav id="TableOfContents">
+  <ul>
+    <li><a href="#まずクリティカルセクションについてちょっと触れておく">まずクリティカルセクションについてちょっと触れておく</a></li>
+    <li><a href="#概要">概要</a></li>
+    <li><a href="#排他制御アルゴリズム色々">排他制御アルゴリズム色々</a></li>
+    <li><a href="#ricart-agrawalas-algorithmについて">Ricart-Agrawala&rsquo;s Algorithmについて</a></li>
+    <li><a href="#最後に">最後に</a>
+      <ul>
+        <li><a href="#以下駄文">以下駄文</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+<h2 id="まずクリティカルセクションについてちょっと触れておく">まずクリティカルセクションについてちょっと触れておく</h2>
+<p>クリティカルセクション(CS)は、その名の通り&quot;<em>危険な部分</em>&ldquo;で実態はコードの集まりです。プロセスはそれぞれCSを所有し、CSで作成したり更新したり色々なことをします。また、システムはCSに1つのプロセスのみが入るように制御しなければいけません。なぜなら、あるCSを共有する複数のプロセスが、そのCSに同時に入り、何かを作成したり更新したりすると、共有のデータに不整合が生じ、そのデータは破壊され、システムとして破綻をきたすためです。</p>
+<p>以下、本題に入ります。</p>
+<h2 id="概要">概要</h2>
+<p>分散システムのプロセス同期において、クリティカルセクションのMutual Exclusion(ME、相互排他)を実現するアルゴリズムの一つであるRicart-Agrawala&rsquo;s(RA) Algorithmについてまとめます。</p>
+<p>分散システムにおいてMEを満たすには以下の３つの基本的な手法があります。</p>
+<ol>
+<li>non-token-based approach</li>
+<li>token-based approach</li>
+<li>quorum-based approach</li>
+</ol>
+<p>RA Algorithmは1に属するものですが、とりあえずそれぞれ軽く触れておきます。</p>
+<ol>
+<li>ノントークンベース手法：複数プロセスがメッセージ交換を行う。</li>
+<li>トークンベース手法：複数プロセスがトークンの授受を行う。</li>
+<li>コーラムベース手法：CSの占有権を求めるプロセスが、CSを実行するために他のプロセスの部分集合から許可を得る。わかりにくいですが、コーラムについてはこちらのQiitaの記事が大変参考になりました。<a href="https://qiita.com/everpeace/items/632831371da5ff215995">最近よく聞くQuorumは過半数(多数決)よりも一般的でパワフルな概念だった</a>(またブロックチェーン界隈では、こんなのもあるようです。<a href="https://www.jpmorgan.co.jp/country/JP/ja/Quorum">Quorum Advancing Blockchain Technology</a>)</li>
+</ol>
+<p>それぞれの手法によって、複数プロセスが相互に通信を行いCSの占有権の授受を行っています。</p>
+<h2 id="排他制御アルゴリズム色々">排他制御アルゴリズム色々</h2>
+<p>ノントークンベース手法において、RA AlgorithmはLamport&rsquo;s Algorithmを修正したアルゴリズムです。また、Lodha-Kshemkalyani&rsquo;s AlgorithmはそのRAを修正したものとなっています。他にもトークンベース手法においては、Raymond&rsquo;s Algorithmやそれを修正したKanrar-Chiaki Algorithm、Suzuki-Kasami Algorithmなどがあり、コーラムベース手法ではMaekawa&rsquo;s Algorithmなどがあります。こういったように系譜を少したどるだけでも有名な様々なアルゴリズムが存在することがわかります。</p>
+<p>最近でもこれらのアルゴリズムを組み合わせたり、拡張することによっていくつかのアルゴリズムが論文で発表されています。最新のもので面白いものがあったのでそれについて書こうかと思っていたのですが、一般には有料の論文であったためここでは留めておきます(興味のある方は話しましょう!)。が、代わりに論文にあたっていた際に偶然ヒットしたこちらのスライド（<a href="https://www.nii.ac.jp/sparc/event/2010/pdf/5/1_ojiro_220924.pdf">大学図書館における電子ジャーナル契約の現状と課題 〜ビッグディールの光と影〜</a>）がちょっと古いものですが、へーといった感じだったので紹介しておきます。</p>
+<h2 id="ricart-agrawalas-algorithmについて">Ricart-Agrawala&rsquo;s Algorithmについて</h2>
+<p>これは1981年に発表された古典的なアルゴリズムの一つで、以下内容をまとめます。</p>
+<ol>
+<li>あるプロセスP<sub>i</sub>がCSの占有権を求めるとします。この時、P<sub>i</sub>は他のすべてのプロセスに対して、&lt; T<sub>i</sub>, i&gt;の形のリクエストをキャストします（マルチキャストを行う）。ここでT<sub>i</sub>はランポートの論理時計による現在のタイムスタンプを表しており、これは端的にいうとただの時刻です。分散システムでは共通の物理時計がないため、これがその代役を担います。時間を事象発生の前後関係に基づく因果律によって論理的に定義しています。こちらの資料<a href="http://www-masu.ist.osaka-u.ac.jp/~kakugawa/distalg.pdf">分散アルゴリズム入門</a>に設計・実装などが載っていました。</li>
+<li>P<sub>i</sub>は他のすべてのプロセスがこのリクエストに対してOKのレスポンスを返してくれるまで待ちます。すべてのOKの返事が集まれば、P<sub>i</sub>はCSを占有できるようになります。</li>
+<li>もし他のプロセスP<sub>j</sub>&lt; T<sub>j</sub>, j&gt;(T<sub>j</sub>&gt;T<sub>i</sub>)がCSを占有していたり、CSの占有権を要求していたとすると、&lt; T<sub>i</sub>, i&gt;のリクエストはキューに入り自分に占有権が廻ってくるのを待ちます。</li>
+</ol>
+<p>以上がそのロジックなのですが、言葉ではわかりにくいので、具体的にして今、{P<sub>1</sub>, P<sub>2</sub>, P<sub>3</sub>, P<sub>4</sub>, P<sub>5</sub>, P<sub>6</sub>}の6つのプロセスがあるとし、P<sub>2</sub>とP<sub>5</sub>がT<sub>2</sub>=13、T<sub>5</sub>=7でリクエストを送り、その時P<sub>3</sub>がCSにアクセスしている状況を考えます。</p>
+<p>まず、P<sub>5</sub>はT<sub>5</sub>=7で、P<sub>2</sub>はT<sub>2</sub>=13で、すべてのプロセスに対してリクエストを送信します。
+<img src="https://khigasa.github.io/higs/images/image001.png" alt="RAImage001"></p>
+<p>P<sub>1</sub>、P<sub>4</sub>、P<sub>6</sub>に関してはどれもすぐにOKの返事をします。これらはどれもCSを占有してはいないし、要求してもいないので。
+<img src="https://khigasa.github.io/higs/images/image002.png" alt="RAImage002"></p>
+<p>残りのプロセスはCSを占有していたり、要求しているものなので、無思慮に処理は進みませんが、すべてランポートの論理時計によるタイムスタンプに従って処理されていきます。今回、T<sub>5</sub>&lt; T<sub>2</sub>なのでP<sub>3</sub>へのリクエストにおいて、まずP<sub>5</sub>がキューに入ります。
+<img src="https://khigasa.github.io/higs/images/image003.png" alt="RAImage003"></p>
+<p>P<sub>2</sub>とP<sub>5</sub>の通信においても、同様の理由でP<sub>5</sub>が優先され、P<sub>5</sub>のキューにP<sub>2</sub>が入ります。
+<img src="https://khigasa.github.io/higs/images/image004.png" alt="RAImage004"></p>
+<p>これでP<sub>3</sub>のリリースメッセージを受け取ると、キューによりまずP<sub>5</sub>がCSを占有し、
+<img src="https://khigasa.github.io/higs/images/image005.png" alt="RAImage005"></p>
+<p>P<sub>5</sub>のリリースメッセージを受けるとP<sub>2</sub>がCSを占有します。
+<img src="https://khigasa.github.io/higs/images/image006.png" alt="RAImage006"></p>
+<p>これでRAではMEが達成でき、プロセスのCS占有権リクエストはレスポンスやキューに入るなど、どんな形であれ処理されるので、リクエスト元クライアントの同期遅延は <em><strong>O</strong></em>(1)のオーダーとかなり小さくなるのですが、一方、リクエストはマルチキャストを伴っており、さらに言うと、CS開放の際のリリースメッセージも実はマルチキャストを伴っていたりするので、そのデータ通信量（<em>Bandwidth</em>??）は <em><strong>O</strong></em>(n)のオーダーに膨らみ、nが増えればかなりつらいことになります。一長一短ですね。アルゴリズムの比較系の論文はたくさんあるので（比較指標がほぼ決まっているので書きやすいのかもしれません）、単純な頭の体操が好きな人は暇な時に調べてみるとちょっと幸せになるかもしれません。ex/<a href="https://pdfs.semanticscholar.org/3b82/5910741d7b1e8a9eb92cbdf139ed3bbb95c1.pdf">A Comparative Study of Ricart-Agrawala and
+Maekawa Distributed Mutual Exclusion Algorithm</a></p>
+<p>コードがないのも味気ないのですが、興味がある方は他をあたってくださいmm ロジックとしては単純ですが、実装は大変です。（僕が調べた限りでは、Java, C, C++, Pythonで実装されたものが見つかりました ex/<a href="http://codingtechlife.blogspot.com/2017/11/write-c-program-to-implement-ricart.html">
+Write a C program to implement Ricart-Agrawala algorithm for distributed mutual exclusion - Distributed Computing Assignment - BITS -WILP</a>）。</p>
+<h2 id="最後に">最後に</h2>
+<p>僕はプログラミングにおいて形にすることから入りましたが、それは私服で山登りを始めたようなものでした。それでは山登りはできてもせいぜい高尾山とか<a href="https://ja.wikipedia.org/wiki/%E9%A3%AF%E9%87%8E%E5%B1%B1">飯野山</a>くらいで、直ぐ頭打ちになってしまいます。浅い技術の習得が目的化し、プログラミングという行為自体が形骸化していきます。そんな状況を打開すべくCSに関する理論書を漁りはじめ、最初に読んだのがこれだったのですが、まさに効果覿面でした。例えば、言語に対する理解も深まり、的外れの見当が減りデバッグの質が向上するなど、日々のプログラミングにおける様々な局面で良好な変化が起こりました。長い本なので僕のようにある程度の強度で全ページを読むなどと勧めるのはミスリードだと思いますが、僕はOSについて理解したい非理情のエンジニアがいれば、 <em>computing</em> の世界に入る何らかのきっかけには必ずなると思うのでこの<a href="http://iips.icci.edu.iq/images/exam/Abraham-Silberschatz-Operating-System-Concepts---9th2012.12.pdf">OPERATING SYSTEM CONCEPTS</a>をおすすめします。</p>
+<h3 id="以下駄文">以下駄文</h3>
+<p>目の前の大木を見てその山の概形をつかむのが難しいように、数行のコードからそれを支える分野を把握するのは普通の人には不可能だ。実際何らかの理論書を読んだところで目に見える変化はないし、やる意義を問われればないときっぱりないと答えると思う。当人は森の一端を垣間みたことで、何か想像以上に大きなものに触れてしまったように感じ、それ以上奥に進むのを躊躇してしまうかもしれない。しかし、呑気な学習者とは愚かなもので、ひと度そんなよくわからないものに触れてしまうと、好奇心の赴くままに突き進もうとしてしまうものだ。学生時代くらいそんな遊びとも言える、一見無駄な活動に時間を使ってもいいだろう。</p>
+<p>かなり厳しいだろうが、まだなんとかなる。一度は森を感じてみたい。</p>
+<hr>
+<p>明日の担当は<a href="https://qiita.com/tsumichan">@tsumichan</a>さんです、お願いいたします。</p>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://khigasa.github.io/higs/tags/computer-science/">computer science</a>
+
+  <a class="tag tag--primary tag--small" href="https://khigasa.github.io/higs/tags/operating-system/">operating system</a>
+
+  <a class="tag tag--primary tag--small" href="https://khigasa.github.io/higs/tags/advent-calender/">Advent Calender</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://khigasa.github.io/higs/rustcli/" data-tooltip="Rustcli">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://khigasa.github.io/higs/%E3%83%AA%E3%82%AB%E3%83%BC%E3%83%88-%E3%82%A2%E3%82%B0%E3%83%A9%E3%83%AF%E3%83%A9%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E5%90%8D%E5%89%8D%E3%81%8C%E6%B0%97%E3%81%AB%E5%85%A5%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7%E3%81%BE%E3%81%A8%E3%82%81%E3%81%A6%E3%81%BF%E3%81%9F/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://khigasa.github.io/higs/%E3%83%AA%E3%82%AB%E3%83%BC%E3%83%88-%E3%82%A2%E3%82%B0%E3%83%A9%E3%83%AF%E3%83%A9%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E5%90%8D%E5%89%8D%E3%81%8C%E6%B0%97%E3%81%AB%E5%85%A5%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7%E3%81%BE%E3%81%A8%E3%82%81%E3%81%A6%E3%81%BF%E3%81%9F/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#table-of-contents">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2020 kHigasa. All Rights Reserved
+  </span>
+</footer>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://khigasa.github.io/higs/rustcli/" data-tooltip="Rustcli">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://khigasa.github.io/higs/%E3%83%AA%E3%82%AB%E3%83%BC%E3%83%88-%E3%82%A2%E3%82%B0%E3%83%A9%E3%83%AF%E3%83%A9%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E5%90%8D%E5%89%8D%E3%81%8C%E6%B0%97%E3%81%AB%E5%85%A5%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7%E3%81%BE%E3%81%A8%E3%82%81%E3%81%A6%E3%81%BF%E3%81%9F/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://khigasa.github.io/higs/%E3%83%AA%E3%82%AB%E3%83%BC%E3%83%88-%E3%82%A2%E3%82%B0%E3%83%A9%E3%83%AF%E3%83%A9%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E5%90%8D%E5%89%8D%E3%81%8C%E6%B0%97%E3%81%AB%E5%85%A5%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7%E3%81%BE%E3%81%A8%E3%82%81%E3%81%A6%E3%81%BF%E3%81%9F/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#table-of-contents">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkhigasa.github.io%2Fhigs%2F%25E3%2583%25AA%25E3%2582%25AB%25E3%2583%25BC%25E3%2583%2588-%25E3%2582%25A2%25E3%2582%25B0%25E3%2583%25A9%25E3%2583%25AF%25E3%2583%25A9%25E3%2582%25A2%25E3%2583%25AB%25E3%2582%25B4%25E3%2583%25AA%25E3%2582%25BA%25E3%2583%25A0%25E5%2590%258D%25E5%2589%258D%25E3%2581%258C%25E6%25B0%2597%25E3%2581%25AB%25E5%2585%25A5%25E3%2581%25A3%25E3%2581%259F%25E3%2581%25AE%25E3%2581%25A7%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2F">
+          <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fkhigasa.github.io%2Fhigs%2F%25E3%2583%25AA%25E3%2582%25AB%25E3%2583%25BC%25E3%2583%2588-%25E3%2582%25A2%25E3%2582%25B0%25E3%2583%25A9%25E3%2583%25AF%25E3%2583%25A9%25E3%2582%25A2%25E3%2583%25AB%25E3%2582%25B4%25E3%2583%25AA%25E3%2582%25BA%25E3%2583%25A0%25E5%2590%258D%25E5%2589%258D%25E3%2581%258C%25E6%25B0%2597%25E3%2581%25AB%25E5%2585%25A5%25E3%2581%25A3%25E3%2581%259F%25E3%2581%25AE%25E3%2581%25A7%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2F">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://khigasa.github.io/higs/images/avatar.jpg" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">kHigasa</h4>
+    
+      <div id="about-card-bio">Coding in C/C++ &amp; Julia is my basic skill set.</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Bachelor of Science in Physics
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Tokyo, Japan
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      
+      <div id="cover" style="background-image:url('https://khigasa.github.io/higs/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://khigasa.github.io/higs/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/khigasa.github.io\/higs\/%E3%83%AA%E3%82%AB%E3%83%BC%E3%83%88-%E3%82%A2%E3%82%B0%E3%83%A9%E3%83%AF%E3%83%A9%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E5%90%8D%E5%89%8D%E3%81%8C%E6%B0%97%E3%81%AB%E5%85%A5%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7%E3%81%BE%E3%81%A8%E3%82%81%E3%81%A6%E3%81%BF%E3%81%9F\/';
+          
+            this.page.identifier = '\/%E3%83%AA%E3%82%AB%E3%83%BC%E3%83%88-%E3%82%A2%E3%82%B0%E3%83%A9%E3%83%AF%E3%83%A9%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E5%90%8D%E5%89%8D%E3%81%8C%E6%B0%97%E3%81%AB%E5%85%A5%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7%E3%81%BE%E3%81%A8%E3%82%81%E3%81%A6%E3%81%BF%E3%81%9F\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'haggard-higs-hacks';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+
