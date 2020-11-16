@@ -27,7 +27,7 @@ paginate = 10
   job = "Bachelor of Science in Physics"
   location = "Tokyo, Japan"
   picture = "images/avatar.jpg"
-  twitter = "kohgasa"
+  twitter = "kojihigasa"
 
 [[menu.main]]
   weight = 1
