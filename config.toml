@@ -22,7 +22,7 @@ paginate = 10
   archive = "archives"
 
 [author]
-  name = "kHigasa"
+  name = "Koji Higasa"
   bio = "Coding in C/C++ & Julia is my basic skill set."
   job = "Bachelor of Science in Physics"
   location = "Tokyo, Japan"
@@ -108,7 +108,7 @@ paginate = 10
   identifier = "twitter"
   name = "Twitter"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-twitter\"></i>"
-  url = "https://twitter.com/kohgasa"
+  url = "https://twitter.com/kojihigasa"
 [[menu.links]]
   weight = 7
   identifier = "facebook"
