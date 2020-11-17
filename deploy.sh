@@ -19,7 +19,7 @@ fi
 git commit -m "$msg"
 
 # Push source and build repos.
-git push -f origin gh-pages
+git push -f origin master:gh-pages
 
 # Come Back up to the Project Root
 cd ..
