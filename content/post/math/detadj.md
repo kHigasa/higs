@@ -19,14 +19,14 @@ thumbnailImage: https://1.bp.blogspot.com/-u4tcj_Qm67U/Vtd-y7iwdNI/AAAAAAAA4TI/s
 
 <!--toc-->
 
-# 証明する式
-if
+# 証明する命題
+If
 $$
-\mathrm{det}A\neq0
+\mathrm{det}A\neq0,
 $$
 then
 $$
-\mathrm{det}(\mathrm{adj}A) = (\mathrm{det}A)^{n-1}
+\mathrm{det}(\mathrm{adj}A) = (\mathrm{det}A)^{n-1}.
 $$
 ここで, $\mathrm{det}A$(ディターミナントエー)は$A$の行列式, $\mathrm{adj}A$(アジョイントエー)は$A$の余因子行列を表す.
 
@@ -57,7 +57,7 @@ $$
 \right)=
 (\mathrm{det}A)^n
 $$
-$^{*1}$2つのn次正方行列の積の行列式$\mathrm{det}AB$は各行列の行列式の積$\mathrm{det}A\cdot\mathrm{det}B$に等しい(行列式の交代性と多重線形性による帰結 [1]).
+$^{*1}$2つのn次正方行列の積の行列式$\mathrm{det}AB$は各行列の行列式の積$\mathrm{det}A\cdot\mathrm{det}B$に等しい(行列式の交代性と多重線形性による帰結 [^1]).
 
 となる. 最後に両辺を$\mathrm{det}A(\neq0)$で割って求める式
 $$
@@ -65,6 +65,5 @@ $$
 $$
 を得る.<div style="text-align: right">$\Box$</div>
 
-### References
-1. 斉藤正彦 (2014). 線形代数学 東京図書
+[^1]:斉藤正彦. 2014. 線形代数学. 東京図書.
 
