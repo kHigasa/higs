@@ -93,6 +93,12 @@ paginate = 10
   url = "https://www.instagram.com/khigasa/"
 [[menu.links]]
   weight = 4
+  identifier = "pinterest"
+  name = "Pinterest"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-pinterest\"></i>"
+  url = "https://www.pinterest.jp/kojihigasa/"
+[[menu.links]]
+  weight = 4
   identifier = "youtube"
   name = "YouTube"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-youtube\"></i>"
