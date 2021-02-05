@@ -23,8 +23,9 @@ paginate = 10
 
 [author]
   name = "Koji Higasa"
-  bio = "Coding in C/C++ & Julia is my basic skill set."
-  job = "Bachelor of Science in Physics"
+  bio = "I study physics."
+  job = "student"
+  #job = "Master's student at the Univ. of Tokyo"
   location = "Tokyo, Japan"
   picture = "images/avatar.jpg"
   twitter = "kojihigasa"
