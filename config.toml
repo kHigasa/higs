@@ -24,8 +24,7 @@ paginate = 10
 [author]
   name = "Koji Higasa"
   bio = "I study physics."
-  job = "student"
-  #job = "Master's student at the Univ. of Tokyo"
+  job = "Master's student at the Univ. of Tokyo"
   location = "Tokyo, Japan"
   picture = "images/avatar.jpg"
   twitter = "kojihigasa"
